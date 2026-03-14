@@ -1,24 +1,24 @@
 # zcy.github.io
 A2-3
-
-##Chenyu.Zhu
-##Yuan.Xu
-##Hanjun.Zheng
-##Yuhan.Gao
 ## 团队成员介绍 (Group Members)
 
 <!-- 在这里为每个团队成员创建一个部分 -->
 
-### 成员A的名字 (学号)
+### Chenyu.Zhu(学号)
 <img src="成员A的照片文件名.jpg" alt="成员A" width="150">
 <p>这里是成员A的简短介绍。</p>
 
-### 成员B的名字 (学号)
+### Yuan.Xu (学号)
 <img src="成员B的照片文件名.jpg" alt="成员B" width="150">
 <p>这里是成员B的简短介绍。</p>
 
-<!-- 根据你的组员数量，继续添加更多成员介绍 -->
+### Hanjun.Zheng (学号)
+<img src="成员B的照片文件名.jpg" alt="成员B" width="150">
+<p>这里是成员B的简短介绍。</p>
 
+### Yuhan.Gao (学号)
+<img src="成员B的照片文件名.jpg" alt="成员B" width="150">
+<p>这里是成员B的简短介绍。</p>
 <hr>
 
 ## 项目 Persona (Project Personas)
