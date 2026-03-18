@@ -1,36 +1,75 @@
 # zcy.github.io
-A2-3
-## 团队成员介绍 (Group Members)
+# CPT208 Group Project
 
-<!-- 在这里为每个团队成员创建一个部分 -->
+**Project Theme:** A2 Suzhou Grand Canal – Maple Bridge  
+**Project Idea:** A mobile onsite interactive experience for Maple Bridge using XR, GenAI, and location-based storytelling.  
+**Modes:** Quick Explore for visitors and Deep Explore for local residents/students.
 
-### Chenyu.Zhu(2361550)
-<img src="成员A的照片文件名.jpg" alt="成员A" width="150">
-<p>这里是成员A的简短介绍。</p>
+## Group Members
 
-### Yuan.Xu (学号)
-<img src="成员B的照片文件名.jpg" alt="成员B" width="150">
-<p>这里是成员B的简短介绍。</p>
+### Chenyu Zhu
+![Member 1 photo](member1.jpg)
 
-### Hanjun.Zheng (学号)
-<img src="成员B的照片文件名.jpg" alt="成员B" width="150">
-<p>这里是成员B的简短介绍。</p>
+**Student ID:** 2361550  
+**Brief Introduction:** I am interested in HCI, digital heritage, and interactive storytelling.
 
-### Yuhan.Gao (学号)
-<img src="成员B的照片文件名.jpg" alt="成员B" width="150">
-<p>这里是成员B的简短介绍。</p>
-<hr>
+---
 
-## 项目 Persona (Project Personas)
+### Yuan Yu
+![Member 2 photo](member2.jpg)
 
-根据 10-80-10 规则，我们为项目创建了以下两个用户画像。
+**Student ID:** 2254XXX  
+**Brief Introduction:** I am interested in UI/UX design and visual communication.
 
-### Persona 1: [角色名字]
-*   **背景**:
-*   **目标**:
-*   **痛点**:
+---
 
-### Persona 2: [角色名字]
-*   **背景**:
-*   **目标**:
-*   **痛点**:
+### Hanjun Zheng
+![Member 3 photo](member3.jpg)
+
+**Student ID:** 2254XXX  
+**Brief Introduction:** I am interested in front-end development and creative prototyping.
+
+---
+
+### Yuhan Gao
+![Member 4 photo](member4.jpg)
+
+**Student ID:** 259858  
+**Brief Introduction:** I am interested in user research, design thinking, and project planning.
+
+---
+
+## Personas
+
+### Quick Explore — Lin, 21
+**Type:** Out-of-town visitor  
+
+**Background:**  
+Lin is visiting Suzhou for the first time with friends. She has heard of the poem *Night Mooring at Maple Bridge* but does not know much about the historical meaning of the site.
+
+**Goals:**  
+Quickly understand why Maple Bridge is important and enjoy an engaging onsite experience.
+
+**Needs:**  
+Short explanations, visual AR content, easy interaction, and fast understanding.
+
+**Frustrations:**  
+Heritage sites often feel text-heavy, and she finds it hard to connect the current place with its historical significance.
+
+---
+
+### Deep Explore — Yh, 20
+**Type:** Local student  
+
+**Background:**  
+Yuhan is a university student in Suzhou. He already knows Maple Bridge as a cultural symbol, but wants to understand its deeper historical role in the Grand Canal system.
+
+**Goals:**  
+Explore the layered history and cultural identity of Maple Bridge in greater depth.
+
+**Needs:**  
+Rich historical context, AI Q&A, detailed story layers, and deeper interpretation of the site.
+
+**Frustrations:**  
+Existing visits often focus only on the famous poem and do not explain why Maple Bridge mattered historically.
+
