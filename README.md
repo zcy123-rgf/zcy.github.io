@@ -1,4 +1,3 @@
-# zcy.github.io
 # CPT208 Group Project
 
 **Project Theme:** A2 Suzhou Grand Canal – Maple Bridge  
