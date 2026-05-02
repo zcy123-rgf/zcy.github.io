@@ -15,14 +15,24 @@ The journey consists of six key stages:
 5. **Progression**: User collects fragments, views their progress, and can compare with others on the leaderboard.
 6. **Completion**: After visiting all points, they receive a summary and shareable results.
 
-Key pain points identified during the journey:
+---
+
+## 2.2 Pain Points Map
+The key pain points of traditional heritage visits are summarized in the figure below:
+
+![Pain Points Map](assets/images/pain-points.png)
+
+Main pain points identified:
 - Confusing navigation at the start
 - Overwhelming text without visual cues
 - Lack of immediate rewards or feedback
+- Low interaction and immersion
+- Language barriers for international visitors
+- Few opportunities for active participation
 
 ---
 
-## 2.2 Core Requirements List
+## 2.3 Core Requirements List
 To make the experience “engaging” and “playful,” the system must meet these essential conditions:
 - **Location-based triggers**: Content activates only when the user reaches the site, ensuring relevance and immersion.
 - **AI-powered storytelling**: Generative AI adapts the tone and depth of stories based on the user’s selected mode.
@@ -31,7 +41,7 @@ To make the experience “engaging” and “playful,” the system must meet th
 
 ---
 
-## 2.3 Field Research & Site Observations
+## 2.4 Field Research & Visitor Interviews
 During our on-site visit to Suzhou Maple Bridge, we conducted short interviews with visitors and observed real user behaviour to identify pain points and needs:
 
 - Observation 1: Many tourists visit the site for photos but do not engage with the historical and cultural context of Maple Bridge.
