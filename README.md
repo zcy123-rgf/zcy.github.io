@@ -74,7 +74,7 @@ Existing visits often focus only on the famous poem and do not explain why Maple
 
 ---
 
-## 1. Motivation & Research (My Contribution)
+## 1. Motivation & Research 
 ### 1.1 Project Background & Motivation
 Suzhou Maple Bridge is a significant cultural heritage site with rich poetic history and Grand Canal culture. However, current on-site experiences are mostly static, text-based, and lack sufficient interaction, leading to low visitor engagement, weak immersion, and poor memorability. Traditional heritage visits cannot meet the needs of modern visitors, especially young people and international tourists. This project aims to solve these pain points by building a playful, immersive, and human-centric interactive experience using XR, generative AI, and location-based storytelling.
 
@@ -86,7 +86,7 @@ The main users include international tourists, domestic visitors, local students
 
 ---
 
-## 2. User Needs (My Contribution)
+## 2. User Needs 
 ### 2.1 User Journey Map
 The complete user journey:
 Home → Map → Story Point → AR / AI / Photo Task → Unlock Fragment → Leaderboard
