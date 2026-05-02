@@ -8,12 +8,12 @@ The full journey for a tourist using Maple Echoes is visualized below:
 ![User Journey Map](assets/images/user-journey.png)
 
 The journey consists of six key stages:
-1.  **Onboarding**: User opens the app and selects Quick Explore mode.
-2.  **Navigation**: Interactive map guides them to the first story point.
-3.  **Engagement**: At the location, AR effects appear, and AI tells a story about the site.
-4.  **Interaction**: User completes a photo or simple task to unlock a cultural fragment.
-5.  **Progression**: User collects fragments, views their progress, and can compare with others on the leaderboard.
-6.  **Completion**: After visiting all points, they receive a summary and shareable results.
+1. **Onboarding**: User opens the app and selects Quick Explore mode.
+2. **Navigation**: Interactive map guides them to the first story point.
+3. **Engagement**: At the location, AR effects appear, and AI tells a story about the site.
+4. **Interaction**: User completes a photo or simple task to unlock a cultural fragment.
+5. **Progression**: User collects fragments, views their progress, and can compare with others on the leaderboard.
+6. **Completion**: After visiting all points, they receive a summary and shareable results.
 
 Key pain points identified during the journey:
 - Confusing navigation at the start
@@ -32,24 +32,24 @@ To make the experience “engaging” and “playful,” the system must meet th
 ---
 
 ## 2.3 Field Research & Site Observations
-During our on-site visit to Suzhou Maple Bridge, we collected photos and notes to understand real user behavior and pain points:
+During our on-site visit to Suzhou Maple Bridge, we conducted short interviews with visitors and observed real user behaviour to identify pain points and needs:
 
-- Observation 1: Many visitors pass by historical markers without reading them, due to long, static text.
-- Observation 2: Tourists frequently take photos but rarely interact with the site beyond taking pictures.
-- Observation 3: Young users expressed interest in “interactive” and “shareable” experiences over traditional guided tours.
-- Observation 4: International visitors struggled with the lack of multilingual support on existing signboards.
+- Observation 1: Many tourists visit the site for photos but do not engage with the historical and cultural context of Maple Bridge.
+- Observation 2: Most visitors rely on brief descriptions from tour guides rather than exploring the site independently.
+- Observation 3: Younger users expressed interest in interactive, gamified experiences that combine sightseeing with storytelling.
+- Observation 4: International visitors mentioned that language barriers and a lack of visual, interactive content made it hard to connect with the site’s history.
 
-### Site Research Photos
-![Maple Bridge Entrance](assets/images/field-research/photo1.jpg)
-*Maple Bridge entrance and visitor flow*
+### Visitor Interview & Observation Photos
+![Visitor Interview 1](assets/images/field-research/interview1.jpg)
+*Interviewing a tourist about their experience and expectations*
 
-![Canal and Bridge View](assets/images/field-research/photo2.jpg)
-*Grand Canal and Maple Bridge landscape*
+![Visitor Interview 2](assets/images/field-research/interview2.jpg)
+*Collecting feedback from visitors on current heritage services*
 
-![Existing Signboard](assets/images/field-research/photo3.jpg)
-*Traditional text-only signboard at the site*
+![Visitor Interview 3](assets/images/field-research/interview3.jpg)
+*Talking with international tourists about language and content needs*
 
-![Tourists Taking Photos](assets/images/field-research/photo4.jpg)
-*Visitors taking photos without deep interaction*
+![Visitor Interview 4](assets/images/field-research/interview4.jpg)
+*Observing and recording real visitor behaviour at the site*
 
-All site research photos are stored in the `assets/images/field-research/` folder.
+All field research photos, including visitor interviews and site observations, are stored in the `assets/images/field-research/` folder.
