@@ -14,7 +14,7 @@ Maple Echoes is structured into four main layers to support the core features:
 ## 4.2 High-Fidelity Prototype & Demo
 We built a high-fidelity prototype to simulate the core user experience, including map navigation, AR interactions, and the fragment collection system.
 
-- Demo URL: [Maple Echoes Prototype Demo](https://your-demo-url.com)
+- Demo URL: [Maple Echoes Prototype Demo]([https://your-demo-url.com](https://cpt208-src.vercel.app))
 
 ## 4.3 Team Contributions
 - **Chenyu Zhu (2361550)**: User research, personas, user journey map, pain points analysis, ideation documentation, and portfolio setup.
