@@ -18,7 +18,7 @@ The full user journey for a tourist using **Maple Echoes (Quick Explore Mode)** 
 6.  **Journey Completion**
     After visiting all points, the user receives a summary of their exploration and shareable achievements.
 
-![User Journey Map](assets/images/journey/user-journey.png)
+![User Journey Map](../assets/images/journey/user-journey.png)
 *User journey flow of Maple Echoes, highlighting key interactions and touchpoints*
 
 ---
