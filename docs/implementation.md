@@ -10,7 +10,7 @@ The system serves two user groups through dual modes:
 ## 4.2 System Architecture
 The whole system is divided into four core layers:
 
-![System Architecture Diagram](assets/images/implementation/architecture.png)
+![System Architecture Diagram](../assets/images/implementation/architecture.png)
 
 1. **User Interface Layer**
 Mobile-first interactive interface including home page, mode selection, interactive map, AR camera view, AI dialogue window, fragment collection gallery and leaderboard page.
