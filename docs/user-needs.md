@@ -3,7 +3,7 @@
 ---
 
 ## 2.1 User Journey Map
-The full user journey for a tourist using **Maple Echoes (Quick Explore Mode)** is designed to transform passive sightseeing into an active, playful experience:
+The full user journey for a tourist using **Maple Echoes** is designed to transform passive sightseeing into an active, playful experience:
 
 1.  **Onboarding & Mode Selection**
     User opens the app and chooses between Quick Explore (tourist) or Deep Explore (student) mode.
