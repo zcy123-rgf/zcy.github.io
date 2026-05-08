@@ -55,19 +55,19 @@ To address these pain points, the system must meet three core “playful” requ
 ## 2.4 Evidence of Life (Field Research & Interviews)
 We conducted on-site observations and interviews with visitors at Suzhou Maple Bridge to validate our assumptions and pain points. The following photos document our field research:
 
-![Visitor Interview 1](assets/images/field-research/photo1副本.jpg)
+![Visitor Interview 1](assets/images/field-research/interview1.jpg)
 *Interviewing a tourist about their experience with traditional heritage signage*
 
-![Visitor Interview 2](assets/images/field-research/photo2副本.jpg)
+![Visitor Interview 2](assets/images/field-research/interview2.jpg)
 *Collecting feedback on common pain points during the visit*
 
-![Visitor Interview 3](assets/images/field-research/photo3副本.jpg)
+![Visitor Interview 3](assets/images/field-research/interview3.jpg)
 *Talking with an international visitor about language and accessibility needs*
 
-![Visitor Interview 4](assets/images/field-research/photo4副本.jpg)
+![Visitor Interview 4](assets/images/field-research/interview4.jpg)
 *Observing how visitors interact with static information boards*
 
-![Visitor Interview 5](assets/images/field-research/photo5副本.jpg)
+![Visitor Interview 5](assets/images/field-research/interview5.jpg)
 *Group discussion with local students about their desire for deeper context*
 
 All field research photos are stored in the `assets/images/field-research/` folder.
