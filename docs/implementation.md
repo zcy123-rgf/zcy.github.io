@@ -42,7 +42,7 @@ Users complete on-site photo tasks at each spot to unlock exclusive cultural fra
 The system records user exploration completion rate and collected fragments, displaying rankings to encourage further engagement.
 
 ## 4.4 Team Roles & Contributions
-- **Chenyu Zhu**: Responsible for user research, persona modelling, user journey map, pain point analysis, literature review, website framework building and all document writing for GitHub portfolio.
-- **Yuan Yu**: Responsible for UI visual design, interface layout, poster production and low-fidelity prototype styling.
-- **Hanjun Zheng**: Responsible for system architecture design, AR effect logic, map navigation and technical prototype development.
-- **Yuhan Gao**: Responsible for project planning, requirement sorting, usability testing, feedback collection and project reflection.
+- **Chenyu Zhu (2361550)**: Responsible for user research, persona modelling, user journey map, pain point analysis, literature review, website framework building and all document writing for GitHub portfolio.
+- **Yuan Xu (2363085)**: Responsible for UI visual design, interface layout, poster production and low-fidelity prototype styling.
+- **Yuhan Gao (2359858)**: Responsible for system architecture design, AR effect logic, map navigation and technical prototype development.
+- **Hanjun Zheng (2360088)**: Responsible for project planning, requirement sorting, usability testing, feedback collection and project reflection.
