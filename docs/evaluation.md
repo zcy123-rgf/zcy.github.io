@@ -2,9 +2,9 @@
 
 ## 5.1 Usability Testing with Alpha Version
 We conducted usability testing with 3 real users to evaluate the prototype:
-- User 1: International tourist (Quick Explore mode)
-- User 2: Domestic visitor (Quick Explore mode)
-- User 3: Local student (Deep Explore mode)
+- User 1: International tourist 
+- User 2: Domestic visitor 
+- User 3: Local student 
 
 Key feedback collected:
 1. The gamified fragment collection was very engaging and motivating.
