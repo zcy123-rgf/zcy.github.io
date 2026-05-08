@@ -6,27 +6,40 @@ Suzhou Maple Bridge is a culturally significant site along the Grand Canal, rich
 Maple Echoes aims to solve these pain points by creating a playful, immersive experience that combines location-based services, AR, and Generative AI. The goal is to transform passive sightseeing into active, participatory exploration, making heritage accessible to both casual tourists and local students.
 
 ## 1.2 Literature & Competitor Analysis
+
 ### Key Insights from Academic Research
-We reviewed four studies on digital heritage and AR tourism:
-- Strengths
-  1. Proven effectiveness of AR in increasing visitor engagement and cultural learning.
-  2. Research frameworks for location-based storytelling in heritage contexts.
-  3. Case studies showing gamification improves long-term retention of cultural content.
-- Weaknesses
-  1. Most studies focus on indoor museum environments, not outdoor heritage sites.
-  2. Few frameworks support dual-mode experiences for both tourists and locals.
-  3. Limited discussion of AI integration in on-site, real-time heritage interpretation.
+We reviewed four studies on digital heritage and AR tourism to identify proven approaches and existing gaps:
+
+1. **Huang, Y. (2025)** confirmed that AR and AI significantly increase visitor engagement and cultural learning in heritage contexts, providing a strong theoretical basis for our project.
+2. **Garro & Sundstedt (2022)** presented research frameworks for location-based storytelling, which we adapted for our outdoor site at Maple Bridge.
+3. **Tan et al. (2025)** found that gamification improves long-term retention of cultural content, supporting our fragment collection and reward system design.
+4. **Sánchez-Martín et al. (2025)** discussed AI integration in heritage tourism but noted a lack of real-time, on-site applications, which our project aims to address.
+
+- **Common Strengths Across Research**:
+  - Proven effectiveness of AR in increasing visitor engagement and cultural learning.
+  - Established frameworks for location-based storytelling in heritage contexts.
+  - Evidence that gamification improves long-term retention of cultural content.
+- **Common Weaknesses & Gaps**:
+  - Most studies focus on indoor museum environments, not outdoor heritage sites.
+  - Few frameworks support dual-mode experiences for both tourists and locals.
+  - Limited discussion of AI integration in on-site, real-time heritage interpretation.
 
 ### Commercial Product Benchmarking
-We analyzed four similar AR tourism applications:
-- Strengths
-  1. Intuitive map navigation and location tracking features.
-  2. Visually appealing AR overlays and photo-sharing tools.
-  3. Strong gamification and reward systems to keep users engaged.
-- Weaknesses
-  1. Most lack deep, culturally relevant storytelling and educational content.
-  2. No support for different experience levels (tourist vs. student).
-  3. Limited multilingual support and accessibility features for international users.
+We analyzed four similar AR tourism applications to understand existing market solutions:
+
+1. **Google Arts & Culture**: Offers virtual tours and AR views of heritage sites, with intuitive map navigation but lacks deep, culturally relevant storytelling.
+2. **Wintor AR Tours**: Provides location-based AR overlays for various destinations, with visually appealing effects but generic content.
+3. **Dunhuang Mogao Grottoes Digital Guide**: Features high-quality AR murals but lacks multilingual support and educational depth.
+4. **Pokémon GO (Heritage Events)**: Demonstrates strong gamification and reward systems but has shallow integration with cultural heritage.
+
+- **Common Strengths Across Products**:
+  - Intuitive map navigation and location tracking features.
+  - Visually appealing AR overlays and photo-sharing tools.
+  - Strong gamification and reward systems to keep users engaged.
+- **Common Weaknesses & Gaps**:
+  - Most lack deep, culturally relevant storytelling and educational content.
+  - No support for different experience levels (tourist vs. student).
+  - Limited multilingual support and accessibility features for international users.
 
 ## 1.3 User Personas & Stakeholders
 ### Primary User: Tourists
