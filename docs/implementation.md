@@ -1,23 +1,48 @@
 # 4. Technical Implementation
 
-## 4.1 System Architecture
-Maple Echoes is structured into four main layers to support the core features:
+## 4.1 System Overview
+Our project **Maple Echoes** is an on-site interactive heritage system designed for Suzhou Maple Bridge. It integrates **location-based map navigation, AR visual overlay, AI conversational storytelling, photo check-in tasks, and cultural fragment collection**.
+
+The system serves two user groups through dual modes:
+- Quick Explore for casual tourists
+- Deep Explore for local students and cultural enthusiasts
+
+## 4.2 System Architecture
+The whole system is divided into four core layers:
 
 ![System Architecture Diagram](assets/images/implementation/architecture.png)
-*High-level system architecture of Maple Echoes*
 
-- **Frontend Layer**: Mobile/web interface with map navigation, AR views, and gamified UI.
-- **Location Service**: Handles real-time location tracking and triggers story points.
-- **AI & AR Engine**: Generative AI for storytelling and AR content rendering.
-- **Backend & Database**: Stores user progress, fragments, and leaderboard data.
+1. **User Interface Layer**
+Mobile-first interactive interface including home page, mode selection, interactive map, AR camera view, AI dialogue window, fragment collection gallery and leaderboard page.
 
-## 4.2 High-Fidelity Prototype & Demo
-We built a high-fidelity prototype to simulate the core user experience, including map navigation, AR interactions, and the fragment collection system.
+2. **Location & Navigation Layer**
+Provides real-time GPS positioning, outdoor site route guidance, and automatic trigger when users reach designated cultural story points.
 
-- Demo URL: [Maple Echoes Prototype Demo](https://cpt208-src.vercel.app)
+3. **AR & AI Service Layer**
+- AR module renders historical scene overlay and poetic animation on real camera view.
+- Generative AI supports natural language conversation, adaptive story explanation for both Quick and Deep Explore modes.
 
-## 4.3 Team Contributions
-- **Chenyu Zhu (2361550)**: User research, personas, user journey map, pain points analysis, ideation documentation, and portfolio setup.
-- **Yuan Xu (2363085)**: UI/UX design, visual assets, and prototype styling.
-- **Yuhan Gao (2359858)**: Frontend development, prototype implementation, and AR integration.
-- **Hanjun Zheng (2360088)**: Project planning, requirements management, and evaluation planning.
+4. **Data & Gamification Layer**
+Stores user exploration progress, collected cultural fragments, photo records, and leaderboard data to support gamified motivation and social sharing.
+
+## 4.3 Core Function Implementation
+### Map & Location Trigger
+Interactive map marks all cultural nodes of Maple Bridge. The system automatically detects user location and unlocks corresponding AR and storytelling content when entering the effective range.
+
+### AR Historical Restoration
+When users stand at key landmarks, AR reconstructs ancient bridge scenery and poetic scenes, allowing visitors to compare past and present views visually.
+
+### AI Interactive Dialogue
+AI acts as a cultural narrator. Users can ask historical, poetic and canal-related questions freely. The AI adjusts explanation depth automatically based on selected explore mode.
+
+### Photo Check-in & Fragment Collection
+Users complete on-site photo tasks at each spot to unlock exclusive cultural fragments. Collected fragments can be viewed in the gallery and shared on social platforms.
+
+### Leaderboard Mechanism
+The system records user exploration completion rate and collected fragments, displaying rankings to encourage further engagement.
+
+## 4.4 Team Roles & Contributions
+- **Chenyu Zhu**: Responsible for user research, persona modelling, user journey map, pain point analysis, literature review, website framework building and all document writing for GitHub portfolio.
+- **Yuan Yu**: Responsible for UI visual design, interface layout, poster production and low-fidelity prototype styling.
+- **Hanjun Zheng**: Responsible for system architecture design, AR effect logic, map navigation and technical prototype development.
+- **Yuhan Gao**: Responsible for project planning, requirement sorting, usability testing, feedback collection and project reflection.
