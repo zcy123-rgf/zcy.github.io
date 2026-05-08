@@ -5,7 +5,7 @@
 ## 2.1 User Journey Map
 The full journey for a tourist using Maple Echoes is visualized below:
 
-![User Journey Map](assets/images/user-journey.png)
+![User Journey Map](../assets/images/user-journey.png)
 
 The journey consists of six key stages:
 1. **Onboarding**: User opens the app and selects Quick Explore mode.
@@ -20,7 +20,7 @@ The journey consists of six key stages:
 ## 2.2 Pain Points Map
 The key pain points of traditional heritage visits are summarized in the figure below:
 
-![Pain Points Map](assets/images/pain-points.png)
+![Pain Points Map](../assets/images/pain-points.png)
 
 Main pain points identified:
 - Confusing navigation at the start
@@ -50,16 +50,16 @@ During our on-site visit to Suzhou Maple Bridge, we conducted short interviews w
 - Observation 4: International visitors mentioned that language barriers and a lack of visual, interactive content made it hard to connect with the site’s history.
 
 ### Visitor Interview & Observation Photos
-![Visitor Interview 1](assets/images/field-research/interview1.jpg)
+![Visitor Interview 1](../assets/images/field-research/interview1.jpg)
 *Interviewing a tourist about their experience and expectations*
 
-![Visitor Interview 2](assets/images/field-research/interview2.jpg)
+![Visitor Interview 2](../assets/images/field-research/interview2.jpg)
 *Collecting feedback from visitors on current heritage services*
 
-![Visitor Interview 3](assets/images/field-research/interview3.jpg)
+![Visitor Interview 3](../assets/images/field-research/interview3.jpg)
 *Talking with international tourists about language and content needs*
 
-![Visitor Interview 4](assets/images/field-research/interview4.jpg)
+![Visitor Interview 4](../assets/images/field-research/interview4.jpg)
 *Observing and recording real visitor behaviour at the site*
 
 All field research photos, including visitor interviews and site observations, are stored in the `assets/images/field-research/` folder.
