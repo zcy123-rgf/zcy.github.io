@@ -64,7 +64,7 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 - **Frustrations**: Language barriers make local introductions hard to understand; traditional text signage is boring and not tourist-friendly; lack of clear guidance.
 - **Behaviour**: Curious, open-minded, enjoys interactive AR/AI experiences, and likes sharing travel moments on social media.
 
-![Persona: Liam](assets/images/personas/liam.jpg)
+![Persona: Liam](../assets/images/personas/liam.jpg)
 
 ---
 
@@ -74,7 +74,7 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 - **Frustrations**: Long text explanations are overwhelming; hard to find good photo spots; difficult to connect with local history and culture.
 - **Behaviour**: Aesthetic-focused, detail-oriented, prefers visual and interactive experiences, and enjoys sharing refined travel content online.
 
-![Persona: Emma](assets/images/personas/emma.jpg)
+![Persona: Emma](../assets/images/personas/emma.jpg)
 
 ---
 
