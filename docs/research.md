@@ -56,8 +56,6 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 
 ## 1.3 User Personas & Stakeholders
 
-## 1.3 User Personas & Stakeholders
-
 ### Persona 1: Liam (Male, 24, UK)
 - **Profile**: 24-year-old solo backpacker from the UK, travelling across China independently. He is interested in traditional Chinese culture and historic heritage, with limited Mandarin.
 - **Goals**: Understand the cultural stories behind Maple Bridge; take authentic travel photos; enjoy a simple, engaging, and time-efficient experience.
@@ -79,50 +77,50 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 ---
 
 ### 3. Scenarios
-#### Scenario 1: Lin using Quick Explore
-- **User**: Lin, a tourist
-- **Context**: Weekend afternoon at Maple Bridge, with only one hour to spend and her friends.
-- **Actions**: Opens the app, selects Quick Explore, follows the interactive map to the bridge, triggers AR overlays, listens to a short AI-generated story about the poem, completes a photo check-in task, and unlocks a cultural fragment.
-- **Goal**: Finish the visit quickly and get shareable content for social media.
-- **Outcome**: She finds the experience fun and memorable, and easily understands the basic story behind Maple Bridge.
+#### Scenario 1: Liam using Quick Explore
+- **User**: Liam, international backpacker
+- **Context**: Weekend morning at Maple Bridge, with 1.5 hours to spend, traveling alone.
+- **Actions**: Opens the app, selects Quick Explore (supports English), follows the interactive map to the bridge, triggers AR overlays (historical scene reconstruction), listens to a short AI-generated story (in English) about the poem, completes a photo check-in task, and unlocks a cultural fragment.
+- **Goal**: Finish the visit efficiently, learn basic cultural stories, and get shareable photos for social media.
+- **Outcome**: He overcomes the language barrier, finds the experience engaging, and gains a clear understanding of Maple Bridge’s cultural significance.
 
-#### Scenario 2: Yuhan using Deep Explore
-- **User**: Yuhan, a local student
-- **Context**: Weekend morning at Maple Bridge, with two hours for research on the Grand Canal.
-- **Actions**: Opens the app, selects Deep Explore, uses the AI dialogue system to ask questions about the bridge’s role in the canal system, browses historical maps, and completes deeper photo tasks to unlock detailed fragments.
-- **Goal**: Build a full picture of Maple Bridge’s history for his coursework.
-- **Outcome**: He gains detailed, multi-dimensional information that goes beyond the poem, deepening his understanding of the site.
+#### Scenario 2: Emma using Quick Explore (Photography-Focused)
+- **User**: Emma, Canadian photographer
+- **Context**: Weekend afternoon at Maple Bridge, with friends, focusing on capturing scenic photos.
+- **Actions**: Opens the app, selects Quick Explore (English mode), uses the app’s “photo spot guidance” to find ideal shooting angles, triggers AR overlays to enhance photos, completes photo tasks to unlock fragments, and shares her photos with the app’s built-in filters.
+- **Goal**: Capture unique, artistic photos and learn the poem’s story in a relaxed way.
+- **Outcome**: She gets high-quality photos, understands the cultural background of the site, and shares her experience with friends on social media.
 
 ---
 
 ### 4. Use Cases (Based on AR/AI Interaction System)
 #### Use Case 1: User navigates the app flow (Main Flow)
-1. User opens the app and is greeted with the home screen, showing two mode options: Quick Explore / Deep Explore.
-2. User selects a mode and is taken to the interactive map.
+1. User opens the app and is greeted with the home screen (supports English), showing two mode options: Quick Explore / Deep Explore.
+2. User selects a mode and is taken to the interactive map (English labels).
 3. User follows location guidance to the first story point.
-4. Upon arrival, the system triggers an AR overlay or AI story prompt.
+4. Upon arrival, the system triggers an AR overlay or AI story prompt (in English).
 5. User completes an interaction (photo check-in, AR task, or AI dialogue).
-6. The app unlocks a cultural fragment and updates the user’s collection.
+6. The app unlocks a cultural fragment (with English descriptions) and updates the user’s collection.
 7. User can view their progress, leaderboard, and share their achievements.
 
 #### Use Case 2: User interacts with AR content (Main Flow)
 1. User reaches a story point with AR-enabled content.
-2. The app displays an AR prompt (e.g., “Point your camera at the bridge to see its historical form”).
+2. The app displays an AR prompt (in English): “Point your camera at the bridge to see its historical form”.
 3. User points their device at the target location.
 4. The system renders AR content (e.g., historical reconstructions, animated poems) over the live camera view.
 5. User takes a photo or completes a simple task to confirm engagement.
 6. The app rewards the user with a fragment and unlocks the next step.
 
 #### Use Case 3: User uses AI dialogue to learn more (Main Flow)
-1. User selects Deep Explore mode and taps the AI chat icon.
-2. The AI assistant greets the user and asks, “What would you like to learn about Maple Bridge today?”
-3. User asks a question (e.g., “What role did Maple Bridge play in the Grand Canal trade?”).
-4. The system generates a detailed, context-aware response with additional context.
+1. User selects Deep Explore mode and taps the AI chat icon (supports English input).
+2. The AI assistant greets the user in English and asks, “What would you like to learn about Maple Bridge today?”
+3. User asks a question (e.g., “What’s the story behind the poem at Maple Bridge?”).
+4. The system generates a detailed, context-aware response in English with additional context.
 5. The user can follow up with more questions or return to the map view.
 
 #### Use Case 4: Weak GPS Signal / Location Not Found (Exception Flow)
 1. The app cannot get a strong GPS signal to trigger story points.
-2. The system displays a message: “Weak signal detected. Please move to an open area or enter your location manually.”
+2. The system displays a message (in English): “Weak signal detected. Please move to an open area or enter your location manually.”
 3. The user either moves to a better location or enters the location manually.
 4. The system re-establishes location and triggers the relevant AR/AI content.
 
