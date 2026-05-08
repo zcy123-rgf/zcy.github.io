@@ -6,29 +6,31 @@ We conducted usability testing with 3 real users to evaluate the prototype:
 - User 2: Domestic visitor 
 - User 3: Local student 
 
-Key feedback collected:
-1. The gamified fragment collection was very engaging and motivating.
-2. The AI storytelling made the site’s history easier to understand.
-3. Some users suggested clearer navigation cues at the start.
-4. International users requested more multilingual support in AR content.
+Each user completed the full process including mode selection, map navigation, AR interaction, AI conversation and fragment collection. We recorded their behaviour, feedback and subjective experience.
 
-## 5.2 Iterative Refinement
-Based on user feedback, we made several improvements to the design:
+## 5.2 Key User Feedback
+- Users highly praised the combination of AR scene restoration and real-site visiting, which greatly improved immersion.
+- AI storytelling was considered friendly, easy to understand and suitable for different age groups.
+- The fragment collection and leaderboard successfully increased willingness to explore continuously.
+- Some users suggested adding clearer navigation hints at the beginning.
+- International users hoped for more complete English explanation and multilingual AR subtitles.
 
-| Area | Before | After |
-|------|--------|-------|
-| Navigation | No clear onboarding tutorial | Added a quick start guide and interactive tutorial |
-| AR Content | Limited multilingual support | Added English subtitles and simplified text for international users |
-| Feedback | No immediate reward feedback | Added visual and audio feedback when unlocking fragments |
+## 5.3 Design Iteration & Improvement
+Based on testing feedback, we optimized the following aspects:
+- Added intuitive beginner guidance to reduce operation confusion.
+- Optimized AR trigger sensitivity to adapt to complex outdoor GPS environment.
+- Simplified AI dialogue entry to make it easier for users to ask questions.
+- Enhanced multilingual text and subtitle support for international visitors.
 
-![Before and After Improvements](assets/images/evaluation/iteration.png)
-*Comparison of the interface before and after user testing*
+![Design Iteration Comparison](assets/images/evaluation/iteration.png)
+*Interface and interaction optimization before and after user testing*
 
-## 5.3 Final Reflection
-### Social & Ethical Impact
-Maple Echoes aims to make cultural heritage more accessible and inclusive. By supporting both tourists and local students, we hope to foster a deeper connection with Suzhou’s heritage. We prioritized privacy in our design: no personal location data is stored beyond the current session.
+## 5.4 Social & Ethical Reflection
+The project makes Suzhou Maple Bridge’s poetry and canal culture more accessible to young people and international visitors through lightweight AR and AI interaction. It transforms boring text introduction into vivid, experiential cultural education.
 
-### Use of AI
-Generative AI was used to create and adapt storytelling content, allowing the system to provide different levels of detail for Quick Explore and Deep Explore modes. This helped us deliver personalized, accessible cultural narratives without requiring extensive manual writing.
+We strictly protected user privacy: the system only uses real-time location for on-site triggering and does not store personal location data permanently. No private photo data is uploaded without user permission.
 
-Overall, the project successfully transformed a static heritage visit into an engaging, playful experience that balances education, immersion, and fun.
+## 5.5 AI Application Reflection
+Generative AI plays a core role in personalized storytelling and free question answering. It avoids rigid fixed scripts and provides adaptive content for both casual tourists and in-depth learners. It greatly reduces the cost of manual script writing while maintaining cultural accuracy and logical consistency.
+
+Overall, the project successfully realised a dual-mode, playful, immersive AR–AI interactive system for outdoor heritage sites, solving traditional sightseeing pain points and providing a replicable reference for future cultural tourism design.
