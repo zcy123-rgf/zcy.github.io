@@ -22,7 +22,7 @@ Based on testing feedback, we optimized the following aspects:
 - Simplified AI dialogue entry to make it easier for users to ask questions.
 - Enhanced multilingual text and subtitle support for international visitors.
 
-![Design Iteration Comparison](assets/images/evaluation/iteration.png)
+![Design Iteration Comparison](../assets/images/evaluation/iteration.png)
 *Interface and interaction optimization before and after user testing*
 
 ## 5.4 Social & Ethical Reflection
