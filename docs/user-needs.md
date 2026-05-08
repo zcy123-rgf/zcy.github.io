@@ -26,7 +26,7 @@ The full user journey for a tourist using **Maple Echoes (Quick Explore Mode)** 
 ## 2.2 Pain Points Map
 Key pain points in traditional heritage visits, identified through user interviews and field research:
 
-![Pain Points Map](assets/images/pain/pain-points.png)
+![Pain Points Map](../assets/images/pain/pain-points.png)
 *Summary of pain points in traditional heritage experiences*
 
 - **Confusing navigation**: Visitors often get lost or miss key landmarks due to unclear signage.
@@ -55,19 +55,19 @@ To address these pain points, the system must meet three core “playful” requ
 ## 2.4 Evidence of Life (Field Research & Interviews)
 We conducted on-site observations and interviews with visitors at Suzhou Maple Bridge to validate our assumptions and pain points. The following photos document our field research:
 
-![Visitor Interview 1](assets/images/field-research/interview1.jpg)
+![Visitor Interview 1](../assets/images/field-research/interview1.jpg)
 *Interviewing a tourist about their experience with traditional heritage signage*
 
-![Visitor Interview 2](assets/images/field-research/interview2.jpg)
+![Visitor Interview 2](../assets/images/field-research/interview2.jpg)
 *Collecting feedback on common pain points during the visit*
 
-![Visitor Interview 3](assets/images/field-research/interview3.jpg)
+![Visitor Interview 3](../assets/images/field-research/interview3.jpg)
 *Talking with an international visitor about language and accessibility needs*
 
-![Visitor Interview 4](assets/images/field-research/interview4.jpg)
+![Visitor Interview 4](../assets/images/field-research/interview4.jpg)
 *Observing how visitors interact with static information boards*
 
-![Visitor Interview 5](assets/images/field-research/interview5.jpg)
+![Visitor Interview 5](../assets/images/field-research/interview5.jpg)
 *Group discussion with local students about their desire for deeper context*
 
 All field research photos are stored in the `assets/images/field-research/` folder.
