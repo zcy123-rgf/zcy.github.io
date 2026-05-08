@@ -14,10 +14,10 @@
 
 ---
 
-### Yuan Yu
+### Yuan Xu
 ![Member 2 photo](member2.jpg)
 
-**Student ID:** 2254XXX  
+**Student ID:** 2363085  
 **Brief Introduction:** I am interested in UI/UX design and visual communication.
 
 ---
