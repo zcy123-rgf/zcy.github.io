@@ -44,3 +44,11 @@
 ## 2. User Needs
 [View full content](docs/user-needs.md)
 
+## 3. Ideation & Alternatives
+[View full content](docs/ideation.md)
+
+## 4. Technical Implementation
+[View full content](docs/implementation.md)
+
+## 5. Evaluation & Reflection
+[View full content](docs/evaluation.md)
