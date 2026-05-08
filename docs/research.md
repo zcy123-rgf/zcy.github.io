@@ -56,17 +56,25 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 
 ## 1.3 User Personas & Stakeholders
 
-### 1. Primary User Persona: Lin (Tourist, Quick Explore Mode)
-- **Profile**: 21-year-old college student from out of town, visiting Suzhou for the first time with friends. She has limited time and is looking for a fun, shareable experience.
-- **Goals**: Quickly understand why Maple Bridge is famous, take memorable photos, and learn basic cultural facts without reading long texts.
-- **Frustrations**: Heritage sites rely too much on static text, making it hard to connect the current site with its historical meaning.
-- **Behaviour**: Prefers photo-taking and interactive experiences; often uses mobile apps for on-the-go information.
+## 1.3 User Personas & Stakeholders
 
-### 2. Secondary User Persona: Yuhan (Local Student, Deep Explore Mode)
-- **Profile**: 20-year-old university student in Suzhou, interested in the Grand Canal’s history and local culture. He has more time for in-depth learning.
-- **Goals**: Explore the layered history of Maple Bridge, understand its role in the canal system, and find details not covered in textbooks.
-- **Frustrations**: Most on-site information only focuses on the famous poem, ignoring the bridge’s broader historical context.
-- **Behaviour**: Enjoys reading and asking questions; seeks detailed narratives and visual comparisons (e.g., historical maps).
+### Persona 1: Liam (Male, 24, UK)
+- **Profile**: 24-year-old solo backpacker from the UK, travelling across China independently. He is interested in traditional Chinese culture and historic heritage, with limited Mandarin.
+- **Goals**: Understand the cultural stories behind Maple Bridge; take authentic travel photos; enjoy a simple, engaging, and time-efficient experience.
+- **Frustrations**: Language barriers make local introductions hard to understand; traditional text signage is boring and not tourist-friendly; lack of clear guidance.
+- **Behaviour**: Curious, open-minded, enjoys interactive AR/AI experiences, and likes sharing travel moments on social media.
+
+![Persona: Liam](assets/images/personas/liam.jpg)
+
+---
+
+### Persona 2: Emma (Female, 27, Canada)
+- **Profile**: 27-year-old marketing professional and photographer from Canada, travelling with friends. She loves ancient Chinese architecture and cultural heritage.
+- **Goals**: Take high-quality artistic photos at Maple Bridge; learn the story of the famous poem easily; gain an immersive and memorable experience.
+- **Frustrations**: Long text explanations are overwhelming; hard to find good photo spots; difficult to connect with local history and culture.
+- **Behaviour**: Aesthetic-focused, detail-oriented, prefers visual and interactive experiences, and enjoys sharing refined travel content online.
+
+![Persona: Emma](assets/images/personas/emma.jpg)
 
 ---
 
