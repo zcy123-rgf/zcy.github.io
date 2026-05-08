@@ -50,19 +50,19 @@ During our on-site visit to Suzhou Maple Bridge, we conducted short interviews w
 - Observation 4: International visitors mentioned that language barriers and a lack of visual, interactive content made it hard to connect with the site’s history.
 
 ## Visitor Interview & Observation Photos
-![Visitor Interview 1](../assets/images/field-research/photo1副本.jpg)
+![Visitor Interview 1](../assets/images/field-research/interview1.jpg)
 *Interviewing a tourist about their experience and expectations*
 
-![Visitor Interview 2](../assets/images/field-research/photo2副本.jpg)
+![Visitor Interview 2](../assets/images/field-research/interview2.jpg)
 *Collecting feedback from visitors on current heritage services*
 
-![Visitor Interview 3](../assets/images/field-research/photo3副本.jpg)
+![Visitor Interview 3](../assets/images/field-research/interview3.jpg)
 *Talking with international tourists about language and content needs*
 
-![Visitor Interview 4](../assets/images/field-research/photo4副本.jpg)
+![Visitor Interview 4](../assets/images/field-research/interview4.jpg)
 *Observing and recording real visitor behaviour at the site*
 
-![Visitor Interview 5](../assets/images/field-research/photo5副本.jpg)
+![Visitor Interview 5](../assets/images/field-research/interview5.jpg)
 *Group interview with visitors to summarize key needs and pain points*
 
 All field research photos, including visitor interviews and site observations, are stored in the `assets/images/field-research/` folder.
