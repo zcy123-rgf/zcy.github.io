@@ -18,6 +18,6 @@ We built a high-fidelity prototype to simulate the core user experience, includi
 
 ## 4.3 Team Contributions
 - **Chenyu Zhu (2361550)**: User research, personas, user journey map, pain points analysis, ideation documentation, and portfolio setup.
-- **Yuan Yu (2254XXX)**: UI/UX design, visual assets, and prototype styling.
-- **Hanjun Zheng (2360088)**: Frontend development, prototype implementation, and AR integration.
-- **Yuhan Gao (2359858)**: Project planning, requirements management, and evaluation planning.
+- **Yuan Xu (2363085)**: UI/UX design, visual assets, and prototype styling.
+- **Yuhan Gao (2359858)**: Frontend development, prototype implementation, and AR integration.
+- **Hanjun Zheng (2360088)**: Project planning, requirements management, and evaluation planning.
