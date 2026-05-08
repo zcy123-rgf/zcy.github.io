@@ -20,7 +20,7 @@ The journey consists of six key stages:
 ## 2.2 Pain Points Map
 The key pain points of traditional heritage visits are summarized in the figure below:
 
-![Pain Points Map](assets/images/pain-points.png)
+![Pain Points Map](..assets/images/pain-points.png)
 
 Main pain points identified:
 - Confusing navigation at the start
