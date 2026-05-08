@@ -29,12 +29,12 @@ We analyzed four similar AR tourism applications:
   3. Limited multilingual support and accessibility features for international users.
 
 ## 1.3 User Personas & Stakeholders
-### Primary User: Tourists (Quick Explore Mode)
+### Primary User: Tourists
 - **Profile**: 20–35-year-old domestic/international visitors, short on time, looking for a fun, shareable experience.
 - **Needs**: Simple navigation, engaging AR interactions, and quick-to-understand cultural stories.
 - **Goals**: Explore the site quickly, collect memorable photos, and learn basic cultural facts.
 
-### Secondary User: Local Students/Residents (Deep Explore Mode)
+### Secondary User: Local Students/Residents
 - **Profile**: 16–25-year-old students and residents interested in history, culture, and local heritage.
 - **Needs**: In-depth historical context, multi-layered narratives, and educational content.
 - **Goals**: Learn detailed stories about the site, compare historical changes, and engage with the local community.
