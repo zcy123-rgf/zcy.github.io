@@ -11,7 +11,7 @@ To quickly explore design directions for Maple Echoes, we used the Crazy Eights 
 
 These quick iterations helped us identify the most engaging combinations of AR, AI, and gamification that would work for both Quick Explore and Deep Explore modes.
 
-![Crazy Eights Sketches](assets/images/ideation/crazy-eights.jpg)
+![Crazy Eights Sketches](../assets/images/ideation/crazy-eights.jpg)
 *Selected Crazy Eights sketches from our brainstorming session*
 
 ---
