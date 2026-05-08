@@ -26,7 +26,7 @@
 ![Member 3 photo](member3.jpg)
 
 **Student ID:** 2359858  
-**Brief Introduction:** I am interested in user research, design thinking, and project planning.
+**Brief Introduction:** I am interested in front-end development and creative prototyping.
 
 ---
 
@@ -34,7 +34,7 @@
 ![Member 4 photo](member4.jpg)
 
 **Student ID:** 2360088  
-**Brief Introduction:** I am interested in front-end development and creative prototyping.
+**Brief Introduction:** I am interested in user research, design thinking, and project planning.
 
 ---
 
