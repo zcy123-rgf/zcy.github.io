@@ -810,6 +810,72 @@
       border: 1px solid var(--line);
     }
 
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .metric-card {
+      background: rgba(255, 253, 248, .96);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--maple);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+
+    .metric-card strong {
+      display: block;
+      color: var(--brown);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .metric-card span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .iteration-evidence {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .iteration-shot {
+      margin: 0;
+    }
+
+    .iteration-shot img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 7px solid #2f2119;
+      background: #fff8ec;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, .16);
+    }
+
+    .iteration-shot figcaption {
+      font-size: 14px;
+      color: var(--brown);
+      font-weight: 750;
+    }
+
+    .iteration-shot figcaption span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
     .footer {
       background: var(--brown);
       color: #fff7ec;
@@ -839,7 +905,8 @@
       .grid.three,
       .grid.four,
       .journey-components,
-      .concepts {
+      .concepts,
+      .metric-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -883,6 +950,8 @@
       .grid.three,
       .grid.four,
       .concepts,
+      .metric-grid,
+      .iteration-evidence,
       .journey-components,
       .feature-list,
       .persona {
@@ -1385,10 +1454,10 @@
       </div>
 
       <div class="grid four" style="margin-top: 24px;">
-        <article class="card"><h3>Chenyu Zhu</h3><p>2361550. User research, personas, journey map, pain point analysis, literature review, website framework, and documentation.</p></article>
-        <article class="card"><h3>Yuan Xu</h3><p>2363085. UI visual design, interface layout, poster production, and low-fidelity prototype styling.</p></article>
-        <article class="card"><h3>Yuhan Gao</h3><p>2359858. System architecture, AR interaction logic, map navigation, and technical prototype planning.</p></article>
-        <article class="card"><h3>Hanjun Zheng</h3><p>2360088. Project planning, requirement organisation, usability testing, feedback collection, and reflection.</p></article>
+        <article class="card"><h3>Chenyu Zhu</h3><p>2361550. UI design, interface layout, high-fidelity prototype, live system implementation, web app design, visual refinement, and low-fidelity prototype styling.</p></article>
+        <article class="card"><h3>Yuan Xu</h3><p>2363085. User research, journey map, pain point analysis, website framework, documentation, poster production, portfolio production, and video production.</p></article>
+        <article class="card"><h3>Yuhan Gao</h3><p>2359858. UI design, project planning, high-fidelity prototype, live system implementation, web app design, system architecture, AR interaction logic, map navigation, and technical prototype planning.</p></article>
+        <article class="card"><h3>Hanjun Zheng</h3><p>2360088. User research, persona development, requirement organisation, usability testing, feedback collection, and reflection.</p></article>
       </div>
     </section>
 
@@ -1397,34 +1466,70 @@
         <div class="section-number">09</div>
         <div class="section-title">
           <div class="section-kicker">Evaluation & Iteration</div>
-          <h2>Evaluation connected user feedback to iteration priorities.</h2>
-          <p>The alpha usability test involved 3 users: an international tourist, a domestic visitor, and a local student. They completed the prototype flow from home entry and map preview to guided route, AR interaction, AI guide, moments, fragment summary, and ranking.</p>
+          <h2>Evaluation used poster evidence to justify a visible AR/AI iteration.</h2>
+          <p>The poster records aggregate participant evidence from 35 users and early prototype evaluation results. The coursework alpha test with 3 users then checked the full flow from home entry and map preview to guided route, AR scan, AI guide, moments, fragment summary, and ranking.</p>
         </div>
       </div>
 
       <div class="grid two">
         <article class="card">
-          <h3>What worked</h3>
+          <h3>Poster evidence used</h3>
           <ul>
-            <li>Users responded positively to combining AR-style interpretation with the physical site visit.</li>
-            <li>AI storytelling was described as friendly and easier to follow than static text.</li>
-            <li>Fragment collection and progress feedback were perceived as motivation to continue exploring.</li>
+            <li>Figure 2 reports n=35 participants: 20 international tourists, 11 domestic tourists, and 4 local residents.</li>
+            <li>Figure 1 shows the strongest pain point was limited interaction, rated 4.57 out of 5.</li>
+            <li>Figure 3 shows 23 of 35 participants preferred the selected playful AR experience with AI dialogue and fragment collection.</li>
           </ul>
         </article>
         <article class="card">
-          <h3>What needed iteration</h3>
+          <h3>Alpha testing setup</h3>
           <ul>
-            <li>Some users needed clearer guidance during onboarding.</li>
-            <li>International visitors requested more complete English explanations and multilingual AR subtitles.</li>
-            <li>The AI entry point and AR trigger feedback needed to be more visible.</li>
+            <li>Participants: 3 alpha users, covering international tourist, domestic visitor, and local student perspectives.</li>
+            <li>Tasks: enter the route, follow map guidance, trigger AR, ask the AI guide, complete the moment task, and review ranking.</li>
+            <li>Methods: observation, task completion notes, verbal feedback, and short rating questions.</li>
           </ul>
         </article>
       </div>
 
-      <figure class="image-frame" style="margin-top: 24px;">
-        <img src="assets/images/evaluation/iteration.png" alt="Before and after design iteration comparison">
-        <figcaption>Before and after comparison of the main iteration themes.</figcaption>
-      </figure>
+      <div class="metric-grid" aria-label="Evaluation rating summary">
+        <div class="metric-card"><strong>4.54</strong><span>Aesthetics</span></div>
+        <div class="metric-card"><strong>4.23</strong><span>Perceived value</span></div>
+        <div class="metric-card"><strong>4.00</strong><span>Engagement</span></div>
+        <div class="metric-card"><strong>3.89</strong><span>Usability</span></div>
+        <div class="metric-card"><strong>4.60</strong><span>Overall acceptance</span></div>
+        <div class="metric-card"><strong>4.29</strong><span>Willingness to recommend</span></div>
+        <div class="metric-card"><strong>4.29</strong><span>Perceived attractiveness</span></div>
+        <div class="metric-card"><strong>3.94</strong><span>Education</span></div>
+      </div>
+
+      <table style="margin-top: 24px;">
+        <thead>
+          <tr>
+            <th>Feedback / problem</th>
+            <th>Evidence from testing</th>
+            <th>Design change</th>
+            <th>Design implication</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Feedback / problem">Heritage visits needed stronger interaction and immersion.</td>
+            <td data-label="Evidence from testing">Poster Figure 1 rated limited interaction 4.57 and low immersion 4.43; Figure 3 showed 23/35 participants preferred the AR + AI + fragment concept.</td>
+            <td data-label="Design change">The revised screen makes the AR scan state, voice AI guide, and task feedback more visible in the same interface.</td>
+            <td data-label="Design implication">The change makes the key interaction point more explicit and turns passive viewing into guided AR/AI participation.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="iteration-evidence" aria-label="Before and after screenshots for AR AI iteration">
+        <figure class="image-frame iteration-shot">
+          <img src="assets/images/evaluation/iteration/before/app-ar.jpg" alt="Before iteration AR screen with weaker interaction guidance">
+          <figcaption>Before: Alpha AR screen<span>The camera-based heritage scene was present, but the scan action and AI guide entry were less prominent.</span></figcaption>
+        </figure>
+        <figure class="image-frame iteration-shot">
+          <img src="assets/images/evaluation/iteration/after/app-ar.jpg" alt="After iteration AR screen with clearer scan and AI guide entry">
+          <figcaption>After: Refined AR/AI screen<span>The updated version foregrounds the AR scan state, voice AI support, and visible interaction feedback.</span></figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="reflection">
@@ -1503,7 +1608,7 @@
           </tr>
           <tr>
             <td data-label="Coursework requirement">Evaluation and iteration</td>
-            <td data-label="Current evidence">Usability testing with 3 users, feedback themes, and before/after iteration comparison.</td>
+            <td data-label="Current evidence">Usability testing with 3 users, poster feedback evidence, rating summary, and AR/AI before/after iteration screenshots.</td>
             <td data-label="Status">Included</td>
           </tr>
           <tr>
@@ -1542,7 +1647,7 @@
           <ul>
             <li>OpenAI Codex, accessed on 2026-05-09, available at <a href="https://openai.com/codex" target="_blank" rel="noreferrer">https://openai.com/codex</a>. Used for coding assistance, portfolio text refinement, responsive layout debugging, and generation of supporting infographic-style assets.</li>
             <li>The AI-generated or AI-assisted production work was reviewed against the group’s existing README, process documents, field research photos, Figma link, and coursework requirements.</li>
-            <li>Primary user research claims, participant numbers, evaluation evidence, and design decisions were not invented during portfolio production.</li>
+            <li>AI assistance was used to organise and phrase evaluation summaries; the team remains responsible for checking participant numbers, feedback evidence, and design claims before submission.</li>
           </ul>
         </article>
       </div>
