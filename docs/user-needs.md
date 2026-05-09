@@ -3,7 +3,7 @@
 ---
 
 ## 2.1 User Journey Map
-The full user journey for a tourist using **Maple Echoes** is designed to transform passive sightseeing into an active, playful experience. It responds directly to the pain points shown in the poster and in the pain points map: confusing navigation, static text, low interactivity, lack of progress feedback, and one-size-fits-all content.
+The full user journey for a tourist using **Maple Echoes** is designed to transform passive sightseeing into an active, playful experience. It responds directly to the pain points shown in the poster and in the pain points map: confusing navigation, static text, low interactivity, lack of progress feedback, and one-size-fits-all content. The updated journey follows the poster sequence: onboarding, mode selection, map navigation, story point, AR interaction, AI dialogue, fragment unlock, leaderboard, and moment sharing.
 
 1.  **Onboarding & Mode Selection**
     User opens the app and chooses between Quick Explore (tourist) or Deep Explore (student) mode.

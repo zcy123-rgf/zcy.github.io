@@ -494,7 +494,7 @@
 
     .phone-row {
       display: grid;
-      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      grid-template-columns: repeat(9, minmax(190px, 1fr));
       gap: 18px;
       overflow-x: auto;
       padding: 26px 18px 24px;
@@ -504,6 +504,38 @@
       border: 1px solid rgba(216, 163, 91, .45);
       border-top: 6px solid var(--gold);
       border-radius: var(--radius);
+    }
+
+    .prototype-card {
+      min-width: 0;
+      color: #fff7ec;
+    }
+
+    .prototype-card img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 6px solid #2f2119;
+      background: #fff8ec;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, .24);
+    }
+
+    .prototype-card strong {
+      display: block;
+      margin-top: 12px;
+      color: #fff7ec;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .prototype-card span {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 247, 236, .72);
+      font-size: 13px;
+      line-height: 1.35;
     }
 
     .phone {
@@ -712,7 +744,7 @@
       }
 
       .phone-row {
-        grid-template-columns: repeat(6, 178px);
+        grid-template-columns: repeat(9, 210px);
         margin-inline: -18px;
         border-left: 0;
         border-right: 0;
@@ -1058,67 +1090,56 @@
         <div class="section-number">07</div>
         <div class="section-title">
           <div class="section-kicker">Prototype Walkthrough</div>
-          <h2>The prototype demonstrates the main interaction loop.</h2>
-          <p>The Figma prototype represents the intended flow from mode selection to map guidance, AR prompt, AI dialogue, fragment unlock, leaderboard, and optional sharing. The screens below are simplified portfolio recreations of that flow.</p>
+          <h2>The prototype demonstrates the poster journey flow.</h2>
+          <p>The walkthrough follows the poster sequence from account onboarding and mode selection to map navigation, story point arrival, AR/AI interaction, fragment unlock, leaderboard, and moment sharing.</p>
         </div>
       </div>
 
       <div class="phone-row" aria-label="Prototype screen walkthrough">
-        <article>
-          <div class="phone">
-            <div class="screen-top">Maple Echoes</div>
-            <div class="screen-body">
-              <div class="screen-block"><strong>Choose a mode</strong><br>Quick Explore<br>Deep Explore</div>
-              <div class="screen-block">Brief onboarding explains route length and interaction type.</div>
-            </div>
-          </div>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/onboarding.png" alt="Onboarding account access screen">
+          <strong>01 Onboarding</strong>
+          <span>Account access keeps fragments and ranking identity.</span>
         </article>
-        <article>
-          <div class="phone">
-            <div class="screen-top">Map</div>
-            <div class="screen-body">
-              <div class="screen-block screen-map"><span class="pin"></span></div>
-              <div class="screen-block">Next story point: Bridge view</div>
-            </div>
-          </div>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/mode-selection.png" alt="Mode selection home screen">
+          <strong>02 Mode Selection</strong>
+          <span>Users begin the Maple Bridge journey and choose the route depth.</span>
         </article>
-        <article>
-          <div class="phone">
-            <div class="screen-top">AR Trigger</div>
-            <div class="screen-body">
-              <div class="ar-view"></div>
-              <div class="screen-block">Point the camera at the bridge to view a contextual overlay.</div>
-            </div>
-          </div>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/map-navigation.png" alt="Guided map navigation screen">
+          <strong>03 Map Navigation</strong>
+          <span>Route guidance leads visitors to the next story point.</span>
         </article>
-        <article>
-          <div class="phone">
-            <div class="screen-top">AI Dialogue</div>
-            <div class="screen-body">
-              <div class="screen-block">What would you like to learn about Maple Bridge today?</div>
-              <div class="screen-block">Story behind the poem</div>
-              <div class="screen-block">Canal history</div>
-            </div>
-          </div>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/story-point.png" alt="Story point screen">
+          <strong>04 Story Point</strong>
+          <span>The site prompt introduces the Grand Canal turning point.</span>
         </article>
-        <article>
-          <div class="phone">
-            <div class="screen-top">Fragment</div>
-            <div class="screen-body">
-              <div class="screen-block"><strong>Fragment unlocked</strong><br>Poem memory</div>
-              <div class="screen-block">Progress updates after a completed check-in.</div>
-            </div>
-          </div>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/ar-interaction.png" alt="AR interaction screen">
+          <strong>05 AR Interaction</strong>
+          <span>AR introduces Zhang Ji and supports a photo task.</span>
         </article>
-        <article>
-          <div class="phone">
-            <div class="screen-top">Leaderboard</div>
-            <div class="screen-body">
-              <div class="screen-block">Collection progress</div>
-              <div class="screen-block">Progress ranking</div>
-              <div class="screen-block">Optional visit summary</div>
-            </div>
-          </div>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/ai-dialogue.png" alt="AI dialogue screen">
+          <strong>06 AI Dialogue</strong>
+          <span>Visitors ask about the bridge, canal, and poem.</span>
+        </article>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/fragment-unlock.png" alt="Fragment unlock screen">
+          <strong>07 Fragment Unlock</strong>
+          <span>Check-in feedback turns the visit into a collected memory.</span>
+        </article>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/leaderboard.png" alt="Leaderboard screen">
+          <strong>08 Leaderboard</strong>
+          <span>Community ranking supports optional continued exploration.</span>
+        </article>
+        <article class="prototype-card">
+          <img src="assets/images/prototype/moment-share.png" alt="Moment sharing screen">
+          <strong>09 Moment Share</strong>
+          <span>Visitors browse and share Maple Bridge moments.</span>
         </article>
       </div>
 
