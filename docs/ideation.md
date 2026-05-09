@@ -9,7 +9,7 @@ To quickly explore design directions for Maple Echoes, we used the Crazy Eights 
 - AI dialogue interfaces and storytelling formats
 - Gamified progression and fragment collection mechanics
 
-These quick iterations helped us identify the most engaging combinations of AR, AI, and gamification that would work for both Quick Explore and Deep Explore modes.
+These quick iterations helped us identify the most engaging combinations of AR, AI, and gamification for one continuous guided visit.
 
 ![Crazy Eights Sketches](../assets/images/ideation/crazy-eights.jpg)
 *Selected Crazy Eights sketches from our brainstorming session*
@@ -34,7 +34,7 @@ As shown in our poster’s design decision analysis, we compared three distinct 
 - **Pros**:
   1.  Combines location-based triggers, AR interaction, and personalized AI storytelling.
   2.  Gamified progression with fragment collection and a leaderboard keeps users motivated.
-  3.  Dual-mode flexibility (Quick Explore / Deep Explore) caters to both tourists and students.
+  3.  AI follow-up questions allow visitors to access deeper cultural context without an extra decision step.
   4.  Supports active participation through photo tasks and shareable achievements.
 - **Cons**: Requires more development effort for AR/AI integration and gamification mechanics.
 
@@ -64,6 +64,6 @@ Through iterative testing of the prototype, we refined key flows:
 ---
 
 ## 3.4 Key Design Decisions & Rationale
-- **Why we kept the dual-mode design**: To support both time-limited tourists and in-depth learners, ensuring the experience is inclusive for all visitor types.
+- **Why we simplified the entry flow**: To make the first step faster and keep every visitor on one clear route, while still supporting deeper inquiry through the AI guide.
 - **Why we integrated both AR and AI**: AR provides visual immersion and photo opportunities, while AI enables personalized, adaptive storytelling.
 - **Why we chose fragment collection as the core mechanic**: It creates a clear progression path, encourages exploration, and provides shareable, memorable rewards.

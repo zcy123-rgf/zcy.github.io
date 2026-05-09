@@ -8,8 +8,7 @@
 **Figma Prototype:** https://www.figma.com/make/c0dRs2buy6AqLNbdvQpPdl/Cultural-Heritage-Experience-Wireframe?p=f&t=2d0sT2ezjjVFXTE7-0
 
 **Project Theme:** A2 Suzhou Grand Canal – Maple Bridge  
-**Project Idea:** A mobile onsite interactive experience for Maple Bridge using XR, GenAI, and location-based storytelling.  
-**Modes:** Quick Explore for visitors and Deep Explore for local residents/students.
+**Project Idea:** A mobile onsite interactive experience for Maple Bridge using XR, GenAI, location-based storytelling, photo moments, fragments, and ranking.
 
 ## Setup & Technologies
 

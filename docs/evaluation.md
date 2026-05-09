@@ -33,4 +33,4 @@ We strictly protected user privacy: the system only uses real-time location for 
 ## 5.5 AI Application Reflection
 Generative AI plays a core role in personalized storytelling and free question answering. It avoids rigid fixed scripts and provides adaptive content for both casual tourists and in-depth learners. It greatly reduces the cost of manual script writing while maintaining cultural accuracy and logical consistency.
 
-Overall, the project successfully realised a dual-mode, playful, immersive AR–AI interactive system for outdoor heritage sites, solving traditional sightseeing pain points and providing a replicable reference for future cultural tourism design.
+Overall, the project successfully realised a playful, immersive AR-AI interactive system for outdoor heritage sites, solving traditional sightseeing pain points and providing a replicable reference for future cultural tourism design.

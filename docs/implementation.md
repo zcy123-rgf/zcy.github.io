@@ -3,9 +3,7 @@
 ## 4.1 System Overview
 Our project **Maple Echoes** is an on-site interactive heritage system designed for Suzhou Maple Bridge. It integrates **location-based map navigation, AR visual overlay, AI conversational storytelling, photo check-in tasks, and cultural fragment collection**.
 
-The system serves two user groups through dual modes:
-- Quick Explore for casual tourists
-- Deep Explore for local students and cultural enthusiasts
+The system supports one continuous guided route while still allowing visitors to ask deeper AI follow-up questions when they want more context.
 
 ## 4.2 System Architecture
 The whole system is divided into four core layers:
@@ -13,14 +11,14 @@ The whole system is divided into four core layers:
 ![System Architecture Diagram](../assets/images/implementation/architecture.png)
 
 1. **User Interface Layer**
-Mobile-first interactive interface including home page, mode selection, interactive map, AR camera view, AI dialogue window, fragment collection gallery and leaderboard page.
+Mobile-first interactive interface including home entry, map preview, guided route, AR camera view, AI dialogue window, moments, fragment summary and ranking page.
 
 2. **Location & Navigation Layer**
 Provides real-time GPS positioning, outdoor site route guidance, and automatic trigger when users reach designated cultural story points.
 
 3. **AR & AI Service Layer**
 - AR module renders historical scene overlay and poetic animation on real camera view.
-- Generative AI supports natural language conversation, adaptive story explanation for both Quick and Deep Explore modes.
+- Generative AI supports natural language conversation and adaptive story explanation during the guided route.
 
 4. **Data & Gamification Layer**
 Stores user exploration progress, collected cultural fragments, photo records, and leaderboard data to support gamified motivation and social sharing.
@@ -33,7 +31,7 @@ Interactive map marks all cultural nodes of Maple Bridge. The system automatical
 When users stand at key landmarks, AR reconstructs ancient bridge scenery and poetic scenes, allowing visitors to compare past and present views visually.
 
 ### AI Interactive Dialogue
-AI acts as a cultural narrator. Users can ask historical, poetic and canal-related questions freely. The AI adjusts explanation depth automatically based on selected explore mode.
+AI acts as a cultural narrator. Users can ask historical, poetic and canal-related questions freely, and the AI adjusts explanation depth based on the question and route context.
 
 ### Photo Check-in & Fragment Collection
 Users complete on-site photo tasks at each spot to unlock exclusive cultural fragments. Collected fragments can be viewed in the gallery and shared on social platforms.

@@ -31,7 +31,7 @@ We reviewed five studies on digital heritage and AR tourism to inform our design
   - Evidence that gamification improves long-term retention of cultural content.
 - **Common Weaknesses & Gaps**:
   - Most studies focus on indoor museum environments, not outdoor heritage sites like Maple Bridge.
-  - Few frameworks support dual-mode experiences for both tourists and locals.
+  - Few frameworks support one continuous outdoor route with optional deeper inquiry.
   - Limited discussion of integrated AR/AI dialogue systems in on-site, real-time heritage interpretation.
 
 ### Commercial Product Benchmarking
@@ -48,7 +48,7 @@ We analyzed four similar AR tourism applications to identify strengths and gaps 
   - Strong gamification and reward systems to keep users engaged.
 - **Common Weaknesses & Gaps**:
   - Most lack deep, culturally relevant storytelling and educational content.
-  - No support for different experience levels (tourist vs. student) or dual-mode interaction.
+  - Limited support for flexible follow-up questions during an on-site route.
   - Limited multilingual support and accessibility features for international users.
 
 Our project addresses these gaps by combining **AR interactions, AI dialogue, photo check-ins, and fragment collection** into a unified experience that works for both casual tourists and curious learners.
@@ -80,22 +80,22 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 ### Primary and Secondary User Groups
 Based on the poster participant distribution and the topic stakeholders, **international tourists** are treated as the primary user group for the initial persona scenarios. Liam and Emma represent two international visitor needs: time-efficient cultural understanding and photography-focused exploration.
 
-Domestic tourists and local residents/students are treated as secondary stakeholders. Their needs are reflected in the **Deep Explore** mode, which provides more layered cultural explanation and supports users who want to go beyond basic landmark information.
+Domestic tourists and local residents/students are treated as secondary stakeholders. Their needs are reflected through AI follow-up questions and layered explanation, which support users who want to go beyond basic landmark information without leaving the guided route.
 
 ---
 
 ### 3. Scenarios
-#### Scenario 1: Liam using Quick Explore
+#### Scenario 1: Liam following the guided route
 - **User**: Liam, international backpacker
 - **Context**: Weekend morning at Maple Bridge, with 1.5 hours to spend, traveling alone.
-- **Actions**: Opens the app, selects Quick Explore (supports English), follows the interactive map to the bridge, triggers AR overlays (historical scene reconstruction), listens to a short AI-generated story (in English) about the poem, completes a photo check-in task, and unlocks a cultural fragment.
+- **Actions**: Opens the app, starts the guided route, follows the interactive map to the bridge, triggers AR overlays (historical scene reconstruction), listens to a short AI-generated story (in English) about the poem, completes a photo check-in task, and unlocks a cultural fragment.
 - **Goal**: Finish the visit efficiently, learn basic cultural stories, and get shareable photos for social media.
 - **Outcome**: He overcomes the language barrier, finds the experience engaging, and gains a clear understanding of Maple Bridge’s cultural significance.
 
-#### Scenario 2: Emma using Quick Explore (Photography-Focused)
+#### Scenario 2: Emma on a photography-focused visit
 - **User**: Emma, Canadian photographer
 - **Context**: Weekend afternoon at Maple Bridge, with friends, focusing on capturing scenic photos.
-- **Actions**: Opens the app, selects Quick Explore (English mode), uses the app’s “photo spot guidance” to find ideal shooting angles, triggers AR overlays to enhance photos, completes photo tasks to unlock fragments, and shares her photos with the app’s built-in filters.
+- **Actions**: Opens the app, starts the guided route, uses the app’s photo spot guidance to find ideal shooting angles, triggers AR overlays to enhance photos, completes photo tasks to unlock fragments, and shares her photos with the app’s built-in filters.
 - **Goal**: Capture unique, artistic photos and learn the poem’s story in a relaxed way.
 - **Outcome**: She gets high-quality photos, understands the cultural background of the site, and shares her experience with friends on social media.
 
@@ -103,13 +103,13 @@ Domestic tourists and local residents/students are treated as secondary stakehol
 
 ### 4. Use Cases (Based on AR/AI Interaction System)
 #### Use Case 1: User navigates the app flow (Main Flow)
-1. User opens the app and is greeted with the home screen (supports English), showing two mode options: Quick Explore / Deep Explore.
-2. User selects a mode and is taken to the interactive map (English labels).
+1. User opens the app and is greeted with the home screen (supports English), showing route overview, progress state, and start exploration action.
+2. User starts the route and is taken to the interactive map preview (English labels).
 3. User follows location guidance to the first story point.
 4. Upon arrival, the system triggers an AR overlay or AI story prompt (in English).
 5. User completes an interaction (photo check-in, AR task, or AI dialogue).
 6. The app unlocks a cultural fragment (with English descriptions) and updates the user’s collection.
-7. User can view their progress, leaderboard, and share their achievements.
+7. User can view their progress, ranking, and share their achievements.
 
 #### Use Case 2: User interacts with AR content (Main Flow)
 1. User reaches a story point with AR-enabled content.
@@ -120,7 +120,7 @@ Domestic tourists and local residents/students are treated as secondary stakehol
 6. The app rewards the user with a fragment and unlocks the next step.
 
 #### Use Case 3: User uses AI dialogue to learn more (Main Flow)
-1. User selects Deep Explore mode and taps the AI chat icon (supports English input).
+1. User taps the AI chat icon during the guided route (supports English input).
 2. The AI assistant greets the user in English and asks, “What would you like to learn about Maple Bridge today?”
 3. User asks a question (e.g., “What’s the story behind the poem at Maple Bridge?”).
 4. The system generates a detailed, context-aware response in English with additional context.

@@ -116,7 +116,7 @@
       position: relative;
       background:
         linear-gradient(120deg, rgba(74, 45, 31, .95), rgba(74, 45, 31, .86)),
-        url("assets/images/journey/user-journey.png?v=20260509-redesign") center / cover;
+        url("assets/images/prototype/app-home.png") center / cover;
       color: #fff8ec;
       min-height: 82vh;
       display: grid;
@@ -992,8 +992,8 @@
             <div class="meta-value">Suzhou Maple Bridge, poetry, canal heritage, and urban memory</div>
           </div>
           <div class="meta-item">
-            <div class="meta-label">Modes</div>
-            <div class="meta-value">Quick Explore for time-limited visitors; Deep Explore for students and culture-focused visitors</div>
+            <div class="meta-label">Experience</div>
+            <div class="meta-value">A guided route with AR interaction, AI questions, photo moments, fragments, and ranking</div>
           </div>
           <div class="meta-item">
             <div class="meta-label">Team</div>
@@ -1023,13 +1023,13 @@
         </article>
         <article class="card">
           <span class="tag">Users</span>
-          <h3>Different levels of access</h3>
-          <p>International visitors need concise guidance and language support. Local students and culture-focused visitors need more layered explanation and opportunities for inquiry.</p>
+          <h3>Accessible cultural context</h3>
+          <p>International visitors need concise guidance and language support, while curious learners need an easy way to ask follow-up questions without leaving the route.</p>
         </article>
         <article class="card">
           <span class="tag">Response</span>
-          <h3>Dual-mode prototype response</h3>
-          <p>The proposed concept links route guidance, AR prompts, AI dialogue, photo check-ins, fragment collection, and progress feedback in a dual-mode mobile prototype.</p>
+          <h3>Guided prototype response</h3>
+          <p>The proposed concept links route guidance, AR prompts, AI dialogue, photo check-ins, fragment collection, and progress feedback in one continuous mobile journey.</p>
         </article>
       </div>
 
@@ -1083,7 +1083,7 @@
         </article>
         <article class="card">
           <h3>Insight: visitors need flexible inquiry.</h3>
-          <p>Conversational AI literature informed the AI narrator concept, especially for follow-up questions in Deep Explore mode.</p>
+          <p>Conversational AI literature informed the AI narrator concept, especially for follow-up questions during the route.</p>
         </article>
         <article class="card">
           <h3>Insight: rewards should support learning.</h3>
@@ -1091,7 +1091,7 @@
         </article>
         <article class="card">
           <h3>Insight: products often separate core functions.</h3>
-          <p>Benchmarking showed useful examples of maps, AR, and rewards, but fewer examples combining them with dual-mode cultural interpretation.</p>
+          <p>Benchmarking showed useful examples of maps, AR, and rewards, but fewer examples combining them into one continuous on-site cultural journey.</p>
         </article>
       </div>
 
@@ -1134,7 +1134,7 @@
         <article class="card persona persona-board">
           <img src="assets/images/personas/liam.png" alt="Persona board for Liam, an international backpacker using Maple Echoes">
           <div>
-            <span class="tag">Primary user · Quick Explore</span>
+            <span class="tag">Primary visitor</span>
             <h3>Liam, 24, UK</h3>
             <p>A solo backpacker with limited Mandarin. He needs a time-efficient route, English explanation, and enough context to understand why Maple Bridge is culturally significant.</p>
           </div>
@@ -1146,15 +1146,6 @@
             <h3>Emma, 27, Canada</h3>
             <p>A marketing professional and photographer travelling with friends. She needs guidance toward photo opportunities and concise cultural context that can be experienced without interrupting the visit.</p>
           </div>
-        </article>
-        <article class="card">
-          <span class="tag">Secondary users · Deep Explore</span>
-          <h3>Domestic visitors and local residents</h3>
-          <p>The poster also includes domestic tourists and local residents. Their needs are represented through Deep Explore: richer background, layered interpretation, and opportunities to revisit familiar heritage with more cultural context.</p>
-          <ul>
-            <li>Domestic tourists: clearer structure and more interactive interpretation than static signage.</li>
-            <li>Local residents/students: deeper cultural context beyond basic landmark information.</li>
-          </ul>
         </article>
       </div>
     </section>
@@ -1175,8 +1166,8 @@
           <p>The redesigned journey follows a first-time international visitor from opening Maple Echoes to sharing a completed cultural route. Each stage connects what the user does, what they need, where friction appears, and how the prototype responds.</p>
         </article>
         <div class="journey-components" aria-label="Journey map components">
-          <div class="component-chip"><strong>Persona</strong>Liam and Emma represent quick cultural understanding and photo-led exploration.</div>
-          <div class="component-chip"><strong>Stages</strong>The sequence follows the actual prototype flow from mode choice to sharing.</div>
+          <div class="component-chip"><strong>Persona</strong>Liam and Emma represent cultural understanding and photo-led exploration.</div>
+          <div class="component-chip"><strong>Stages</strong>The sequence follows the actual prototype flow from home entry to ranking.</div>
           <div class="component-chip"><strong>Actions</strong>Each step describes the visible behaviour the interface must support.</div>
           <div class="component-chip"><strong>Emotion</strong>The emotional arc moves from uncertainty to reward and reflection.</div>
           <div class="component-chip"><strong>Pain Points</strong>Problems are translated into concrete product opportunities.</div>
@@ -1186,34 +1177,34 @@
       <div class="journey-map" aria-label="Redesigned user journey map">
         <div class="journey-board">
           <div class="journey-cell row-label">Stage</div>
-          <div class="journey-cell stage"><span>01</span><strong>Onboarding</strong></div>
-          <div class="journey-cell stage"><span>02</span><strong>Mode Selection</strong></div>
-          <div class="journey-cell stage"><span>03</span><strong>Map Navigation</strong></div>
-          <div class="journey-cell stage"><span>04</span><strong>Story Point</strong></div>
-          <div class="journey-cell stage"><span>05</span><strong>AR / AI Task</strong></div>
-          <div class="journey-cell stage"><span>06</span><strong>Fragment Unlock</strong></div>
-          <div class="journey-cell stage"><span>07</span><strong>Leaderboard</strong></div>
-          <div class="journey-cell stage"><span>08</span><strong>Moment Share</strong></div>
+          <div class="journey-cell stage"><span>01</span><strong>Home Entry</strong></div>
+          <div class="journey-cell stage"><span>02</span><strong>Map Preview</strong></div>
+          <div class="journey-cell stage"><span>03</span><strong>Guided Route</strong></div>
+          <div class="journey-cell stage"><span>04</span><strong>AR Scan</strong></div>
+          <div class="journey-cell stage"><span>05</span><strong>AI Guide</strong></div>
+          <div class="journey-cell stage"><span>06</span><strong>Moments</strong></div>
+          <div class="journey-cell stage"><span>07</span><strong>Echoes Summary</strong></div>
+          <div class="journey-cell stage"><span>08</span><strong>Ranking</strong></div>
 
           <div class="journey-cell row-label">User actions</div>
-          <div class="journey-cell">Creates an account or signs in to save route progress.</div>
-          <div class="journey-cell">Chooses Quick Explore or Deep Explore based on time and interest.</div>
-          <div class="journey-cell">Follows the route to the next cultural node around Maple Bridge.</div>
-          <div class="journey-cell">Arrives at a marked site and opens the story prompt.</div>
-          <div class="journey-cell">Scans the scene, asks a question, or completes a photo task.</div>
-          <div class="journey-cell">Receives a cultural fragment and sees progress update immediately.</div>
-          <div class="journey-cell">Checks collected progress and optional community ranking.</div>
-          <div class="journey-cell">Reviews and shares captured Maple Bridge moments.</div>
+          <div class="journey-cell">Reviews the route promise, estimated time, account state, and progress.</div>
+          <div class="journey-cell">Checks the four story points and identifies the next destination.</div>
+          <div class="journey-cell">Follows walking guidance to the Grand Canal Turning Point.</div>
+          <div class="journey-cell">Scans the scene and interacts with Zhang Ji through AR.</div>
+          <div class="journey-cell">Asks the AI guide questions about the canal, bridge, or poem.</div>
+          <div class="journey-cell">Browses community moments or shares a captured photo.</div>
+          <div class="journey-cell">Receives a fragment, snapshot, and progress confirmation.</div>
+          <div class="journey-cell">Compares check-in achievements on the community ranking board.</div>
 
           <div class="journey-cell row-label">Thoughts</div>
-          <div class="journey-cell">Will my visit be saved?</div>
-          <div class="journey-cell">How long will this take?</div>
-          <div class="journey-cell">Where should I go next?</div>
-          <div class="journey-cell">Why is this place important?</div>
+          <div class="journey-cell">What will I discover here?</div>
+          <div class="journey-cell">Where are the important stops?</div>
+          <div class="journey-cell">Am I going the right way?</div>
+          <div class="journey-cell">Who is Zhang Ji, and why is he here?</div>
           <div class="journey-cell">Can I understand the poem in English?</div>
+          <div class="journey-cell">What did other visitors capture?</div>
           <div class="journey-cell">I can see what I achieved.</div>
-          <div class="journey-cell">How do I compare with others?</div>
-          <div class="journey-cell">This is something I can remember and share.</div>
+          <div class="journey-cell">How does my check-in compare?</div>
 
           <div class="journey-cell row-label">Emotion</div>
           <div class="journey-cell emotion">Uncertain</div>
@@ -1226,31 +1217,26 @@
           <div class="journey-cell emotion">Reflective</div>
 
           <div class="journey-cell row-label">Pain points</div>
-          <div class="journey-cell pain">No progress identity.</div>
-          <div class="journey-cell pain">One-size-fits-all route depth.</div>
-          <div class="journey-cell pain">Unclear navigation and missed landmarks.</div>
+          <div class="journey-cell pain">No clear starting point.</div>
+          <div class="journey-cell pain">Key story points are easy to miss.</div>
+          <div class="journey-cell pain">Outdoor navigation can feel uncertain.</div>
           <div class="journey-cell pain">Hard to connect place with cultural meaning.</div>
           <div class="journey-cell pain">Static text and language barriers.</div>
+          <div class="journey-cell pain">Few social reference points on site.</div>
           <div class="journey-cell pain">No immediate feedback after interaction.</div>
           <div class="journey-cell pain">Low continuity after a single visit.</div>
-          <div class="journey-cell pain">Few memorable or shareable outcomes.</div>
 
           <div class="journey-cell row-label">Design response</div>
-          <div class="journey-cell">Account access and saved collection state.</div>
-          <div class="journey-cell">Quick / Deep Explore mode split.</div>
-          <div class="journey-cell">Guided route and location-based story points.</div>
-          <div class="journey-cell">Short contextual prompts at each cultural node.</div>
-          <div class="journey-cell">AR overlay plus AI-supported explanation.</div>
+          <div class="journey-cell">Home entry with route overview and saved progress.</div>
+          <div class="journey-cell">Map preview with four visible story points.</div>
+          <div class="journey-cell">Guided route with distance and walking time.</div>
+          <div class="journey-cell">AR character prompt and camera check-in.</div>
+          <div class="journey-cell">AI-supported explanation and follow-up questions.</div>
+          <div class="journey-cell">Community moments and photo sharing.</div>
           <div class="journey-cell">Fragment reward and visible progress feedback.</div>
-          <div class="journey-cell">Leaderboard as optional motivation.</div>
-          <div class="journey-cell">Moment gallery and shareable visit record.</div>
+          <div class="journey-cell">Ranking as optional motivation.</div>
         </div>
       </div>
-
-      <figure class="image-frame journey-image">
-        <img src="assets/images/journey/user-journey.png?v=20260509-redesign" alt="User journey map of Maple Echoes">
-        <figcaption>Exported journey-map asset retained as supporting visual evidence.</figcaption>
-      </figure>
 
       <table style="margin-top: 28px;">
         <thead>
@@ -1269,12 +1255,12 @@
           <tr>
             <td data-label="User need">Understand cultural content quickly</td>
             <td data-label="Design requirement">Make interpretation visual, concise, and language-accessible</td>
-            <td data-label="Feature response">Quick Explore, AR prompts, short AI-supported story explanations</td>
+            <td data-label="Feature response">AR prompts and short AI-supported story explanations</td>
           </tr>
           <tr>
             <td data-label="User need">Ask deeper questions</td>
             <td data-label="Design requirement">Support flexible inquiry and layered explanations</td>
-            <td data-label="Feature response">Deep Explore mode and AI narrator interface</td>
+            <td data-label="Feature response">AI narrator interface with follow-up questions</td>
           </tr>
           <tr>
             <td data-label="User need">Understand what remains to explore</td>
@@ -1309,12 +1295,12 @@
         <article class="card concept-card">
           <span class="tag">Concept B</span>
           <h3>AR Narrative Guide</h3>
-          <p>A location-based AR experience focused on visual interpretation. It supports situated media, but offers limited support for questions, progression, or different learning depths.</p>
+          <p>A location-based AR experience focused on visual interpretation. It supports situated media, but offers limited support for questions, progression, or deeper cultural inquiry.</p>
         </article>
         <article class="card concept-card selected">
           <span class="tag">Selected Concept C</span>
           <h3>Playful AR, AI & Fragments</h3>
-          <p>The selected direction combines location-based story points, AR prompts, AI-supported explanation, photo check-ins, fragments, and dual-mode structure.</p>
+          <p>The selected direction combines location-based story points, AR prompts, AI-supported explanation, photo check-ins, fragments, and community ranking.</p>
         </article>
       </div>
     </section>
@@ -1394,9 +1380,9 @@
       </figure>
 
       <div class="grid four" style="margin-top: 24px;">
-        <article class="card"><h3>UI Layer</h3><p>Defines the proposed screens: home, mode selection, map, AR camera view, AI dialogue, collection gallery, and leaderboard.</p></article>
+        <article class="card"><h3>UI Layer</h3><p>Defines the proposed screens: home entry, map preview, guided route, AR camera view, AI dialogue, moments, fragment summary, and ranking.</p></article>
         <article class="card"><h3>Location & Navigation</h3><p>Specifies the role of positioning, route guidance, and story-point activation around Maple Bridge.</p></article>
-        <article class="card"><h3>AR & AI Services</h3><p>Describes the intended AR prompts and AI-supported explanations for Quick Explore and Deep Explore.</p></article>
+        <article class="card"><h3>AR & AI Services</h3><p>Describes the intended AR prompts and AI-supported explanations during the guided route.</p></article>
         <article class="card"><h3>Data & Gamification</h3><p>Outlines progress states, collected fragments, photo task records, and ranking logic for the prototype.</p></article>
       </div>
 
@@ -1456,7 +1442,7 @@
       <div class="grid four">
         <article class="card">
           <h3>Cultural accessibility</h3>
-          <p>Quick Explore and multilingual explanation are intended to reduce barriers for visitors without prior cultural knowledge or Mandarin fluency.</p>
+          <p>Guided routing and multilingual explanation are intended to reduce barriers for visitors without prior cultural knowledge or Mandarin fluency.</p>
         </article>
         <article class="card">
           <h3>Location privacy</h3>
@@ -1504,7 +1490,7 @@
           </tr>
           <tr>
             <td data-label="Coursework requirement">Ideation and alternatives</td>
-            <td data-label="Current evidence">Crazy Eights board, Concept A/B/C comparison, and rationale for selecting the dual-mode AR/AI fragment-collection concept.</td>
+            <td data-label="Current evidence">Crazy Eights board, Concept A/B/C comparison, and rationale for selecting the guided AR/AI fragment-collection concept.</td>
             <td data-label="Status">Included</td>
           </tr>
           <tr>

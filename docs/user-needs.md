@@ -24,11 +24,6 @@ The updated journey map follows Liam, a primary international tourist persona, a
 8.  **Ranking**
     User can compare check-in achievements through the community challenge board.
 
-![User Journey Map](../assets/images/journey/user-journey.png)
-*User journey map of Maple Echoes, showing stages, actions, thoughts, emotions, pain points, and design responses*
-
----
-
 ## 2.2 Pain Points Map
 Key pain points in traditional heritage visits, identified through user interviews and field research:
 
@@ -39,7 +34,7 @@ Key pain points in traditional heritage visits, identified through user intervie
 - **Overwhelming static text**: Long, unstructured explanations are hard to read and process on-site.
 - **Low interactivity**: Passive viewing fails to engage young visitors or create memorable experiences.
 - **No immediate feedback**: Visitors get no sense of progress or reward during their visit.
-- **One-size-fits-all content**: No differentiation between casual tourists and students seeking deeper learning.
+- **Limited content depth**: Static signs make it hard for curious visitors to ask deeper questions.
 - **Limited shareable moments**: Few opportunities to create content for social media.
 
 ---
@@ -51,7 +46,7 @@ To address these pain points, the system must meet three core “playful” requ
     The app uses real-time GPS to guide users to story points and trigger content automatically. This turns sightseeing into a treasure-hunt-like activity, encouraging exploration and movement.
 
 2.  **Accessible Cultural Interpretation**
-    AR overlays and conversational AI transform static text into visual, interactive storytelling. The content adapts to the user’s mode (Quick/Deep Explore), making history engaging and easy to understand for all ages.
+    AR overlays and conversational AI transform static text into visual, interactive storytelling. The AI guide supports follow-up questions during the route, making history engaging and easy to understand for all ages.
 
 3.  **Strong Interaction & Collection-Based Motivation**
     Photo check-in tasks, fragment collection, and a leaderboard system provide immediate feedback and a clear progression path. This gamification keeps users motivated to explore more and share their achievements.
