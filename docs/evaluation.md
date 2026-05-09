@@ -6,7 +6,7 @@ We conducted usability testing with 3 real users to evaluate the prototype:
 - User 2: Domestic visitor 
 - User 3: Local student 
 
-Each user completed the full process including mode selection, map navigation, AR interaction, AI conversation and fragment collection. We recorded their behaviour, feedback and subjective experience.
+Each user completed the full process including home entry, map preview, guided route, AR interaction, AI guide, moments, fragment summary, and ranking. We recorded their behaviour, feedback and subjective experience.
 
 ## 5.2 Key User Feedback
 - Users highly praised the combination of AR scene restoration and real-site visiting, which greatly improved immersion.
