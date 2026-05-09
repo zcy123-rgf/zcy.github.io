@@ -1,8 +1,34 @@
 # CPT208 Group Project
 
+**Portfolio Homepage:** [Open the Maple Echoes process portfolio](./index.html)
+
+**GitHub Pages URL:** https://zcy123-rgf.github.io/
+**Live System URL:** https://cpt208-src.vercel.app
+**Source Repository:** https://github.com/zcy123-rgf/zcy.github.io
+**Figma Prototype:** https://www.figma.com/make/c0dRs2buy6AqLNbdvQpPdl/Cultural-Heritage-Experience-Wireframe?p=f&t=2d0sT2ezjjVFXTE7-0
+
 **Project Theme:** A2 Suzhou Grand Canal – Maple Bridge  
 **Project Idea:** A mobile onsite interactive experience for Maple Bridge using XR, GenAI, and location-based storytelling.  
 **Modes:** Quick Explore for visitors and Deep Explore for local residents/students.
+
+## Setup & Technologies
+
+This portfolio is a static GitHub Pages site.
+
+- Main page: `index.html`
+- Styling and JavaScript: embedded in `index.html`
+- Assets: `assets/images/`
+- Process documents: `docs/`
+- AI coding log: `ai-logs/`
+
+To run locally, open `index.html` in a browser. No package installation is required.
+
+Technologies used:
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+- Figma for prototype design
 
 ## Group Members
 

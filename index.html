@@ -1,0 +1,1358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maple Echoes | CPT208 HCI Process Portfolio</title>
+  <meta name="description" content="Maple Echoes: Playful AR and AI Heritage Experience for Suzhou Maple Bridge. CPT208 HCI process portfolio.">
+  <style>
+    :root {
+      --ink: #2f2119;
+      --brown: #4a2d1f;
+      --brown-2: #6f3d2a;
+      --red-brown: #873e2f;
+      --maple: #be522b;
+      --gold: #d8a35b;
+      --cream: #f7efe1;
+      --paper: #fffaf1;
+      --paper-2: #f0dfc5;
+      --line: #e1c8a5;
+      --muted: #735942;
+      --white: #fffdf8;
+      --shadow: 0 14px 34px rgba(74, 45, 31, .10);
+      --mat: #efe0c6;
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18px 18px, rgba(74, 45, 31, .035) 1px, transparent 1.5px) 0 0 / 34px 34px,
+        linear-gradient(90deg, rgba(255,255,255,.22) 0 1px, transparent 1px 100%) 0 0 / 56px 56px,
+        linear-gradient(180deg, #fbf4e8 0%, var(--cream) 42%, #f4e6d1 100%);
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(74, 45, 31, .96);
+      color: #fff7ec;
+      border-bottom: 3px solid rgba(216, 163, 91, .52);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(255, 247, 236, .55);
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 18px;
+      background: rgba(255, 250, 241, .06);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      flex-wrap: wrap;
+      min-width: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 4px;
+      color: rgba(255, 247, 236, .86);
+      font-size: 13px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #fff;
+      background: rgba(216, 163, 91, .16);
+    }
+
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(120deg, rgba(74, 45, 31, .95), rgba(74, 45, 31, .86)),
+        url("assets/images/journey/user-journey.png") center / cover;
+      color: #fff8ec;
+      min-height: 82vh;
+      display: grid;
+      align-items: end;
+      border-bottom: 10px solid var(--maple);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 58px;
+      background:
+        linear-gradient(90deg, rgba(255,250,241,.12), rgba(255,250,241,0) 34%),
+        repeating-linear-gradient(90deg, rgba(216,163,91,.45) 0 1px, transparent 1px 42px);
+      opacity: .55;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 92px 22px 58px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, .72fr);
+      gap: 44px;
+      align-items: end;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-inner > * {
+      min-width: 0;
+    }
+
+    .kicker,
+    .section-kicker {
+      color: var(--maple);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .hero .kicker { color: #f0b36d; }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.08;
+      margin: 0;
+      color: var(--brown);
+      letter-spacing: 0;
+    }
+
+    .hero h1 {
+      color: #fffaf1;
+      font-size: clamp(48px, 8vw, 92px);
+      max-width: 860px;
+      margin-top: 14px;
+    }
+
+    .hero-lede {
+      max-width: 720px;
+      margin: 24px 0 0;
+      font-size: clamp(18px, 2.2vw, 24px);
+      color: rgba(255, 248, 236, .9);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 20px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .button:hover { transform: translateY(-1px); }
+    .button.primary { background: var(--maple); color: #fffaf1; box-shadow: 0 8px 18px rgba(74, 45, 31, .18); }
+    .button.secondary { border-color: rgba(255, 250, 241, .42); color: #fffaf1; background: rgba(255, 250, 241, .08); }
+    .button.dark { background: var(--brown); color: #fffaf1; }
+
+    .hero-panel {
+      background: rgba(255, 250, 241, .97);
+      color: var(--ink);
+      border: 1px solid rgba(216, 163, 91, .58);
+      border-top: 5px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 26px 24px;
+      box-shadow: var(--shadow);
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .meta-grid {
+      display: grid;
+      gap: 15px;
+      margin-top: 18px;
+    }
+
+    .meta-item {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    .meta-label {
+      font-size: 12px;
+      color: var(--red-brown);
+      text-transform: uppercase;
+      letter-spacing: .11em;
+      font-weight: 800;
+    }
+
+    .meta-value {
+      margin-top: 3px;
+      color: var(--brown);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    main {
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, transparent 0, transparent calc(50% - 590px), rgba(225, 200, 165, .40) calc(50% - 590px), rgba(225, 200, 165, .40) calc(50% - 589px), transparent calc(50% - 589px)),
+        linear-gradient(90deg, transparent 0, transparent calc(50% + 589px), rgba(225, 200, 165, .40) calc(50% + 589px), rgba(225, 200, 165, .40) calc(50% + 590px), transparent calc(50% + 590px));
+    }
+
+    section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 92px 22px;
+      position: relative;
+      isolation: isolate;
+      border-top: 1px solid rgba(225, 200, 165, .48);
+    }
+
+    section:nth-of-type(even)::before {
+      content: "";
+      position: absolute;
+      inset: 0 calc(50% - 50vw);
+      background: rgba(255, 250, 241, .36);
+      z-index: -1;
+      border-top: 1px solid rgba(225, 200, 165, .35);
+      border-bottom: 1px solid rgba(225, 200, 165, .35);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+      margin-bottom: 38px;
+    }
+
+    .section-number {
+      color: var(--red-brown);
+      border-top: 3px solid var(--maple);
+      border-bottom: 1px solid var(--line);
+      padding: 10px 0 12px;
+      font-family: Georgia, serif;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .section-title h2 {
+      font-size: clamp(34px, 4vw, 56px);
+    }
+
+    .section-title p {
+      max-width: 760px;
+      margin: 15px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid { display: grid; gap: 18px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      background:
+        linear-gradient(180deg, rgba(255,253,248,.98), rgba(255,250,241,.94));
+      border: 1px solid var(--line);
+      border-top: 4px solid rgba(190, 82, 43, .42);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 22px rgba(74, 45, 31, .07);
+      padding: 24px;
+    }
+
+    .card h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .card ul {
+      padding-left: 19px;
+      margin: 10px 0 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 10px;
+      border: 1px solid rgba(190, 82, 43, .42);
+      color: var(--red-brown);
+      background: #fff5e7;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .feature-pill {
+      border-left: 4px solid var(--maple);
+      background: rgba(255, 250, 241, .86);
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 16px;
+      font-weight: 750;
+      color: var(--brown);
+    }
+
+    .image-frame {
+      background: var(--mat);
+      border: 1px solid rgba(126, 80, 49, .26);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .image-frame img {
+      width: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+      border: 1px solid rgba(126, 80, 49, .14);
+    }
+
+    figcaption {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 9px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .persona {
+      display: block;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .persona img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      background: var(--paper-2);
+    }
+
+    .persona > div {
+      padding: 24px;
+    }
+
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 14px;
+    }
+
+    .journey-step {
+      min-height: 174px;
+      background: rgba(255, 253, 248, .96);
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--maple);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+
+    .journey-step strong {
+      display: block;
+      color: var(--brown);
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(74, 45, 31, .07);
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 15px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: var(--brown);
+      color: #fff7ec;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    td { color: var(--muted); }
+    tr:last-child td { border-bottom: 0; }
+
+    .concepts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .concept-card {
+      position: relative;
+      min-height: 330px;
+    }
+
+    .concept-card.selected {
+      border-color: rgba(190, 82, 43, .65);
+      border-top-color: var(--maple);
+      box-shadow: 0 10px 28px rgba(190, 82, 43, .10);
+    }
+
+    .phone-row {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      gap: 18px;
+      overflow-x: auto;
+      padding: 26px 18px 24px;
+      background:
+        linear-gradient(180deg, rgba(74,45,31,.94), rgba(74,45,31,.88)),
+        radial-gradient(circle at 24px 24px, rgba(216,163,91,.16) 1px, transparent 1.5px) 0 0 / 36px 36px;
+      border: 1px solid rgba(216, 163, 91, .45);
+      border-top: 6px solid var(--gold);
+      border-radius: var(--radius);
+    }
+
+    .phone {
+      width: 164px;
+      min-height: 340px;
+      border: 7px solid #2f2119;
+      border-radius: 28px;
+      background: #fff8ec;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, .24);
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .screen-top {
+      height: 54px;
+      background: var(--brown);
+      color: #fff7ec;
+      display: flex;
+      align-items: center;
+      padding: 0 13px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .screen-body {
+      padding: 13px;
+      display: grid;
+      gap: 10px;
+      background:
+        linear-gradient(180deg, rgba(255,250,241,.96), rgba(247,239,225,.96));
+    }
+
+    .screen-block {
+      min-height: 46px;
+      border: 1px solid #ead4b3;
+      background: #fffdfa;
+      border-radius: 7px;
+      padding: 8px;
+      color: var(--brown);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .screen-map {
+      height: 110px;
+      background:
+        linear-gradient(30deg, transparent 44%, rgba(190, 82, 43, .18) 45% 55%, transparent 56%),
+        #f5e4c9;
+      position: relative;
+    }
+
+    .pin {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--maple);
+      border: 3px solid #fff;
+      position: absolute;
+      top: 45%;
+      left: 54%;
+    }
+
+    .ar-view {
+      height: 128px;
+      background:
+        linear-gradient(rgba(74, 45, 31, .18), rgba(74, 45, 31, .18)),
+        url("assets/images/pain/pain-points.png") center / cover;
+      border-radius: 7px;
+      border: 1px solid #ead4b3;
+      position: relative;
+    }
+
+    .ar-view:after {
+      content: "AR overlay";
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      background: rgba(255, 250, 241, .9);
+      color: var(--red-brown);
+      padding: 3px 7px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .quote-band {
+      background: var(--brown);
+      color: #fff7ec;
+      border-radius: var(--radius);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: .82fr 1fr;
+      gap: 28px;
+      align-items: center;
+      border-top: 6px solid var(--gold);
+    }
+
+    .quote-band h3 { color: #fff7ec; font-size: 34px; }
+    .quote-band p { color: rgba(255, 247, 236, .82); margin: 0; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid var(--line);
+    }
+
+    .footer {
+      background: var(--brown);
+      color: #fff7ec;
+      padding: 42px 22px;
+      border-top: 8px solid var(--maple);
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .footer a { color: #ffd7a6; }
+
+    @media (max-width: 940px) {
+      .hero-inner,
+      .split,
+      .quote-band {
+        grid-template-columns: 1fr;
+      }
+
+      .grid.three,
+      .grid.four,
+      .concepts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .section-number { font-size: 24px; }
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        overflow: visible;
+        flex-wrap: wrap;
+        gap: 3px 4px;
+        padding-bottom: 2px;
+      }
+
+      .nav-links a {
+        white-space: nowrap;
+        padding-inline: 8px;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero { min-height: auto; }
+      .hero-inner { padding: 54px 18px 40px; gap: 28px; }
+      section { padding: 64px 18px; }
+      .nav-inner { padding: 12px 18px; }
+      .nav-links a { padding: 5px 7px; }
+      .hero-lede { font-size: 18px; }
+      .hero-panel { padding: 22px 18px; }
+      .grid.two,
+      .grid.three,
+      .grid.four,
+      .concepts,
+      .feature-list,
+      .persona {
+        grid-template-columns: 1fr;
+      }
+
+      .persona img {
+        width: 100%;
+      }
+
+      .hero-actions,
+      .button {
+        width: 100%;
+      }
+
+      .section-title h2 { font-size: 32px; }
+      .section-title p { font-size: 16px; }
+
+      .journey {
+        grid-template-columns: 1fr;
+        overflow: visible;
+      }
+
+      .phone-row {
+        grid-template-columns: repeat(6, 178px);
+        margin-inline: -18px;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
+
+      .phone { width: 158px; }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead { display: none; }
+      tr {
+        border-bottom: 1px solid var(--line);
+        padding: 12px 0;
+      }
+
+      td {
+        border-bottom: 0;
+        padding: 8px 14px;
+      }
+
+      td:before {
+        content: attr(data-label);
+        display: block;
+        font-size: 11px;
+        color: var(--red-brown);
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        font-weight: 800;
+        margin-bottom: 3px;
+      }
+
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Portfolio navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Maple Echoes home">
+        <span class="brand-mark">M</span>
+        <span>Maple Echoes</span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#research">Research</a>
+        <a href="#journey">Requirements</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#evaluation">Evaluation</a>
+        <a href="#references">References</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">CPT208 HCI Group Project</div>
+        <h1>Maple Echoes</h1>
+        <p class="hero-lede">A mobile HCI concept for Suzhou Maple Bridge that uses guided navigation, AR prompts, AI-supported interpretation, and fragment collection to make heritage content easier to access on site.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://www.figma.com/make/c0dRs2buy6AqLNbdvQpPdl/Cultural-Heritage-Experience-Wireframe?p=f&t=2d0sT2ezjjVFXTE7-0" target="_blank" rel="noreferrer">Open Figma Prototype</a>
+          <a class="button secondary" href="https://cpt208-src.vercel.app" target="_blank" rel="noreferrer">Open Live System</a>
+          <a class="button secondary" href="#prototype">View Walkthrough</a>
+          <a class="button secondary" href="#process">Explore Process</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Project metadata">
+        <span class="tag">Suzhou Grand Canal A2</span>
+        <div class="meta-grid">
+          <div class="meta-item">
+            <div class="meta-label">Theme</div>
+            <div class="meta-value">Suzhou Maple Bridge, poetry, canal heritage, and urban memory</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Modes</div>
+            <div class="meta-value">Quick Explore for time-limited visitors; Deep Explore for students and culture-focused visitors</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Team</div>
+            <div class="meta-value">Chenyu Zhu 2361550, Yuan Xu 2363085, Yuhan Gao 2359858, Hanjun Zheng 2360088</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main id="process">
+    <section id="overview">
+      <div class="section-heading">
+        <div class="section-number">01</div>
+        <div class="section-title">
+          <div class="section-kicker">Project Overview</div>
+          <h2>Designing access to place-based heritage.</h2>
+          <p>Maple Bridge carries poetic, canal, and urban memory, but on-site interpretation can be difficult to use while visitors are moving through the site, managing language barriers, or deciding how much time to spend.</p>
+        </div>
+      </div>
+
+      <div class="grid three">
+        <article class="card">
+          <span class="tag">Problem</span>
+          <h3>Unstructured on-site interpretation</h3>
+          <p>Visitors can pass through the area without a clear route, staged interpretation, or feedback that helps them connect individual landmarks with the wider cultural context.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Users</span>
+          <h3>Different levels of access</h3>
+          <p>International visitors need concise guidance and language support. Local students and culture-focused visitors need more layered explanation and opportunities for inquiry.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Response</span>
+          <h3>Dual-mode prototype response</h3>
+          <p>The proposed concept links route guidance, AR prompts, AI dialogue, photo check-ins, fragment collection, and progress feedback in a dual-mode mobile prototype.</p>
+        </article>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-pill">Interactive map with location-based story points</div>
+        <div class="feature-pill">AR prompts for historical and poetic interpretation</div>
+        <div class="feature-pill">AI narrator concept for follow-up questions</div>
+        <div class="feature-pill">Photo tasks, fragment collection, and progress feedback</div>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="section-heading">
+        <div class="section-number">02</div>
+        <div class="section-title">
+          <div class="section-kicker">Problem Space</div>
+          <h2>Five issues defined the design challenge.</h2>
+          <p>The problem framing focused on practical barriers in outdoor heritage interpretation: visitors are mobile, attention is limited, and static information does not always support different levels of interest.</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <figure class="image-frame">
+          <img src="assets/images/pain/pain-points.png" alt="Pain points map for traditional heritage experiences">
+          <figcaption>Pain point map from the project materials.</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card"><h3>Static interpretation</h3><p>Text panels can provide factual information, but they offer limited support for staged exploration or situated interaction.</p></article>
+          <article class="card"><h3>Language barriers</h3><p>Long local descriptions can make cultural context difficult to access for visitors with limited Mandarin.</p></article>
+          <article class="card"><h3>Low interactivity</h3><p>Passive reading gives visitors few opportunities to ask questions, make choices, or receive feedback.</p></article>
+          <article class="card"><h3>No progress feedback</h3><p>Visitors have limited visibility of what they have completed or what remains to explore.</p></article>
+          <article class="card"><h3>Uniform content depth</h3><p>Casual tourists and deeper learners require different levels of explanation, time commitment, and cultural detail.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-heading">
+        <div class="section-number">03</div>
+        <div class="section-title">
+          <div class="section-kicker">Research & Insights</div>
+          <h2>Research translated evidence into design requirements.</h2>
+          <p>The research phase reviewed literature on AR heritage, conversational AI, gamification, and location-based storytelling, then compared these themes with existing cultural and AR tourism products.</p>
+        </div>
+      </div>
+
+      <div class="grid four">
+        <article class="card">
+          <h3>Insight: interpretation should be situated.</h3>
+          <p>AR heritage research suggested that visual overlays can connect digital information to a physical viewpoint, informing the use of site-based AR prompts.</p>
+        </article>
+        <article class="card">
+          <h3>Insight: visitors need flexible inquiry.</h3>
+          <p>Conversational AI literature informed the AI narrator concept, especially for follow-up questions in Deep Explore mode.</p>
+        </article>
+        <article class="card">
+          <h3>Insight: rewards should support learning.</h3>
+          <p>Gamification research informed fragment collection as a light progress mechanism linked to movement and interpretation.</p>
+        </article>
+        <article class="card">
+          <h3>Insight: products often separate core functions.</h3>
+          <p>Benchmarking showed useful examples of maps, AR, and rewards, but fewer examples combining them with dual-mode cultural interpretation.</p>
+        </article>
+      </div>
+
+      <div class="quote-band" style="margin-top: 24px;">
+        <h3>Design requirement</h3>
+        <p>The prototype needed to support a short guided route, optional deeper explanation, and visible progress without making heritage learning feel separate from the site visit.</p>
+      </div>
+
+      <div class="grid two" style="margin-top: 24px;">
+        <article class="card">
+          <h3>Literature reviewed</h3>
+          <p>The team reviewed work on AR-enhanced heritage, conversational AI for cultural collections, gamification in cultural heritage, outdoor location-based storytelling, and broader AR/VR/MR cultural heritage systems.</p>
+        </article>
+        <article class="card">
+          <h3>Products benchmarked</h3>
+          <p>Google Arts & Culture, Wintor AR Tours, Dunhuang Mogao Grottoes Digital Guide, and Pokemon GO heritage events were used to compare navigation, AR interaction, reward structures, and cultural depth.</p>
+        </article>
+      </div>
+
+      <div class="gallery" style="margin-top: 24px;">
+        <img src="assets/images/field-research/interview1.jpg" alt="Field research interview 1">
+        <img src="assets/images/field-research/interview2.jpg" alt="Field research interview 2">
+        <img src="assets/images/field-research/interview3.jpg" alt="Field research interview 3">
+        <img src="assets/images/field-research/interview4.jpg" alt="Field research interview 4">
+        <img src="assets/images/field-research/interview5.jpg" alt="Field research interview 5">
+      </div>
+    </section>
+
+    <section id="personas">
+      <div class="section-heading">
+        <div class="section-number">04</div>
+        <div class="section-title">
+          <div class="section-kicker">Personas & Scenarios</div>
+          <h2>Personas clarified depth, language, and media needs.</h2>
+          <p>The poster identifies international tourists as the largest participant group, with domestic tourists and local residents as secondary stakeholders. The portfolio therefore separates primary visitor personas from secondary learner/resident needs.</p>
+        </div>
+      </div>
+
+      <div class="grid three">
+        <article class="card persona">
+          <img src="assets/images/personas/liam-portrait.png" alt="Close-up portrait representing Liam">
+          <div>
+            <span class="tag">Primary user · Quick Explore</span>
+            <h3>Liam, 24, UK</h3>
+            <p>A solo backpacker with limited Mandarin. He needs a time-efficient route, English explanation, and enough context to understand why Maple Bridge is culturally significant.</p>
+          </div>
+        </article>
+        <article class="card persona">
+          <img src="assets/images/personas/emma-portrait.png" alt="Close-up portrait representing Emma">
+          <div>
+            <span class="tag">Primary visitor subtype</span>
+            <h3>Emma, 27, Canada</h3>
+            <p>A marketing professional and photographer travelling with friends. She needs guidance toward photo opportunities and concise cultural context that can be experienced without interrupting the visit.</p>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag">Secondary users · Deep Explore</span>
+          <h3>Domestic visitors and local residents</h3>
+          <p>The poster also includes domestic tourists and local residents. Their needs are represented through Deep Explore: richer background, layered interpretation, and opportunities to revisit familiar heritage with more cultural context.</p>
+          <ul>
+            <li>Domestic tourists: clearer structure and more interactive interpretation than static signage.</li>
+            <li>Local residents/students: deeper cultural context beyond basic landmark information.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="section-heading">
+        <div class="section-number">05</div>
+        <div class="section-title">
+          <div class="section-kicker">Journey & Requirements</div>
+          <h2>The journey links pain points to interaction feedback.</h2>
+          <p>The user journey was structured from the pain points shown in the poster and process materials: unclear navigation, static text, low interaction, limited feedback, and uniform content depth.</p>
+        </div>
+      </div>
+
+      <div class="journey" aria-label="User journey steps">
+        <div class="journey-step"><strong>1. Onboarding</strong>Select Quick Explore or Deep Explore according to available time and learning depth.</div>
+        <div class="journey-step"><strong>2. Map Navigation</strong>Use the map to locate nearby Maple Bridge story points.</div>
+        <div class="journey-step"><strong>3. Location Trigger</strong>Arrive at a point and receive a contextual AR or AI prompt.</div>
+        <div class="journey-step"><strong>4. Interaction Task</strong>Complete a photo check-in, AR task, or dialogue interaction.</div>
+        <div class="journey-step"><strong>5. Fragment Unlock</strong>Receive a cultural fragment and see updated progress.</div>
+        <div class="journey-step"><strong>6. Completion</strong>Review the route outcome and optional sharing content.</div>
+      </div>
+
+      <figure class="image-frame" style="margin-top: 24px;">
+        <img src="assets/images/journey/user-journey.png" alt="User journey map of Maple Echoes">
+        <figcaption>Pain-point-informed journey map showing how onboarding, navigation, AR/AI prompts, tasks, and progress feedback respond to the problems identified in research.</figcaption>
+      </figure>
+
+      <table style="margin-top: 28px;">
+        <thead>
+          <tr>
+            <th>User need</th>
+            <th>Design requirement</th>
+            <th>Feature response</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="User need">Avoid missing key landmarks</td>
+            <td data-label="Design requirement">Provide situated navigation and clear next-step cues</td>
+            <td data-label="Feature response">Interactive map, route guidance, location-based story points</td>
+          </tr>
+          <tr>
+            <td data-label="User need">Understand cultural content quickly</td>
+            <td data-label="Design requirement">Make interpretation visual, concise, and language-accessible</td>
+            <td data-label="Feature response">Quick Explore, AR prompts, short AI-supported story explanations</td>
+          </tr>
+          <tr>
+            <td data-label="User need">Ask deeper questions</td>
+            <td data-label="Design requirement">Support flexible inquiry and layered explanations</td>
+            <td data-label="Feature response">Deep Explore mode and AI narrator interface</td>
+          </tr>
+          <tr>
+            <td data-label="User need">Understand what remains to explore</td>
+            <td data-label="Design requirement">Make completion visible and encourage continued exploration</td>
+            <td data-label="Feature response">Photo tasks, cultural fragments, progress state, leaderboard concept</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="ideation">
+      <div class="section-heading">
+        <div class="section-number">06</div>
+        <div class="section-title">
+          <div class="section-kicker">Ideation & Alternatives</div>
+          <h2>Ideation compared levels of interaction and feasibility.</h2>
+          <p>Crazy Eights was used to explore possible combinations of map navigation, AR prompts, AI dialogue, photo tasks, and collection mechanics before the team compared three concept directions.</p>
+        </div>
+      </div>
+
+      <figure class="image-frame">
+        <img src="assets/images/ideation/crazy-eights.png" alt="Crazy Eights ideation sketch board with eight concept cards">
+        <figcaption>Ideation board summarising eight early directions documented in the process.</figcaption>
+      </figure>
+
+      <div class="concepts" style="margin-top: 24px;">
+        <article class="card concept-card">
+          <span class="tag">Concept A</span>
+          <h3>Static Story Guide</h3>
+          <p>A map-based guide with prepared text and photos. It is feasible and device-friendly, but it does not address the need for interaction or progress feedback.</p>
+        </article>
+        <article class="card concept-card">
+          <span class="tag">Concept B</span>
+          <h3>AR Narrative Guide</h3>
+          <p>A location-based AR experience focused on visual interpretation. It supports situated media, but offers limited support for questions, progression, or different learning depths.</p>
+        </article>
+        <article class="card concept-card selected">
+          <span class="tag">Selected Concept C</span>
+          <h3>Playful AR, AI & Fragments</h3>
+          <p>The selected direction combines location-based story points, AR prompts, AI-supported explanation, photo check-ins, fragments, and dual-mode structure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="prototype">
+      <div class="section-heading">
+        <div class="section-number">07</div>
+        <div class="section-title">
+          <div class="section-kicker">Prototype Walkthrough</div>
+          <h2>The prototype demonstrates the main interaction loop.</h2>
+          <p>The Figma prototype represents the intended flow from mode selection to map guidance, AR prompt, AI dialogue, fragment unlock, leaderboard, and optional sharing. The screens below are simplified portfolio recreations of that flow.</p>
+        </div>
+      </div>
+
+      <div class="phone-row" aria-label="Prototype screen walkthrough">
+        <article>
+          <div class="phone">
+            <div class="screen-top">Maple Echoes</div>
+            <div class="screen-body">
+              <div class="screen-block"><strong>Choose a mode</strong><br>Quick Explore<br>Deep Explore</div>
+              <div class="screen-block">Brief onboarding explains route length and interaction type.</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="phone">
+            <div class="screen-top">Map</div>
+            <div class="screen-body">
+              <div class="screen-block screen-map"><span class="pin"></span></div>
+              <div class="screen-block">Next story point: Bridge view</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="phone">
+            <div class="screen-top">AR Trigger</div>
+            <div class="screen-body">
+              <div class="ar-view"></div>
+              <div class="screen-block">Point the camera at the bridge to view a contextual overlay.</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="phone">
+            <div class="screen-top">AI Dialogue</div>
+            <div class="screen-body">
+              <div class="screen-block">What would you like to learn about Maple Bridge today?</div>
+              <div class="screen-block">Story behind the poem</div>
+              <div class="screen-block">Canal history</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="phone">
+            <div class="screen-top">Fragment</div>
+            <div class="screen-body">
+              <div class="screen-block"><strong>Fragment unlocked</strong><br>Poem memory</div>
+              <div class="screen-block">Progress updates after a completed check-in.</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="phone">
+            <div class="screen-top">Leaderboard</div>
+            <div class="screen-body">
+              <div class="screen-block">Collection progress</div>
+              <div class="screen-block">Progress ranking</div>
+              <div class="screen-block">Optional visit summary</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top: 24px;">
+        <a class="button dark" href="https://www.figma.com/make/c0dRs2buy6AqLNbdvQpPdl/Cultural-Heritage-Experience-Wireframe?p=f&t=2d0sT2ezjjVFXTE7-0" target="_blank" rel="noreferrer">Open Prototype in Figma</a>
+        <a class="button dark" href="https://cpt208-src.vercel.app" target="_blank" rel="noreferrer" style="margin-left: 10px;">Open Live System</a>
+      </div>
+    </section>
+
+    <section id="implementation">
+      <div class="section-heading">
+        <div class="section-number">08</div>
+        <div class="section-title">
+          <div class="section-kicker">Technical Implementation</div>
+          <h2>The technical plan defines the system responsibilities.</h2>
+          <p>The implementation section describes how a future version could organise mobile UI, navigation, AR and AI services, and progress data. It is a system model for the prototype, not evidence of a production-ready deployment.</p>
+        </div>
+      </div>
+
+      <figure class="image-frame">
+        <img src="assets/images/implementation/architecture.png" alt="Four-layer system architecture diagram">
+        <figcaption>Four-layer architecture diagram for Maple Echoes.</figcaption>
+      </figure>
+
+      <div class="grid four" style="margin-top: 24px;">
+        <article class="card"><h3>UI Layer</h3><p>Defines the proposed screens: home, mode selection, map, AR camera view, AI dialogue, collection gallery, and leaderboard.</p></article>
+        <article class="card"><h3>Location & Navigation</h3><p>Specifies the role of positioning, route guidance, and story-point activation around Maple Bridge.</p></article>
+        <article class="card"><h3>AR & AI Services</h3><p>Describes the intended AR prompts and AI-supported explanations for Quick Explore and Deep Explore.</p></article>
+        <article class="card"><h3>Data & Gamification</h3><p>Outlines progress states, collected fragments, photo task records, and ranking logic for the prototype.</p></article>
+      </div>
+
+      <div class="grid four" style="margin-top: 24px;">
+        <article class="card"><h3>Chenyu Zhu</h3><p>2361550. User research, personas, journey map, pain point analysis, literature review, website framework, and documentation.</p></article>
+        <article class="card"><h3>Yuan Xu</h3><p>2363085. UI visual design, interface layout, poster production, and low-fidelity prototype styling.</p></article>
+        <article class="card"><h3>Yuhan Gao</h3><p>2359858. System architecture, AR interaction logic, map navigation, and technical prototype planning.</p></article>
+        <article class="card"><h3>Hanjun Zheng</h3><p>2360088. Project planning, requirement organisation, usability testing, feedback collection, and reflection.</p></article>
+      </div>
+    </section>
+
+    <section id="evaluation">
+      <div class="section-heading">
+        <div class="section-number">09</div>
+        <div class="section-title">
+          <div class="section-kicker">Evaluation & Iteration</div>
+          <h2>Evaluation connected user feedback to iteration priorities.</h2>
+          <p>The alpha usability test involved 3 users: an international tourist, a domestic visitor, and a local student. They completed the prototype flow from mode selection to map navigation, AR interaction, AI conversation, and fragment collection.</p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>What worked</h3>
+          <ul>
+            <li>Users responded positively to combining AR-style interpretation with the physical site visit.</li>
+            <li>AI storytelling was described as friendly and easier to follow than static text.</li>
+            <li>Fragment collection and progress feedback were perceived as motivation to continue exploring.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>What needed iteration</h3>
+          <ul>
+            <li>Some users needed clearer guidance during onboarding.</li>
+            <li>International visitors requested more complete English explanations and multilingual AR subtitles.</li>
+            <li>The AI entry point and AR trigger feedback needed to be more visible.</li>
+          </ul>
+        </article>
+      </div>
+
+      <figure class="image-frame" style="margin-top: 24px;">
+        <img src="assets/images/evaluation/iteration.png" alt="Before and after design iteration comparison">
+        <figcaption>Before and after comparison of the main iteration themes.</figcaption>
+      </figure>
+    </section>
+
+    <section id="reflection">
+      <div class="section-heading">
+        <div class="section-number">10</div>
+        <div class="section-title">
+          <div class="section-kicker">Social, Ethical & AI Reflection</div>
+          <h2>The concept raises access, privacy, and AI responsibility issues.</h2>
+          <p>Because the concept uses location, camera interaction, and generative AI, the design needs to balance engagement with cultural accuracy, data minimisation, and clear limits on AI-generated interpretation.</p>
+        </div>
+      </div>
+
+      <div class="grid four">
+        <article class="card">
+          <h3>Cultural accessibility</h3>
+          <p>Quick Explore and multilingual explanation are intended to reduce barriers for visitors without prior cultural knowledge or Mandarin fluency.</p>
+        </article>
+        <article class="card">
+          <h3>Location privacy</h3>
+          <p>The privacy principle is to use real-time location only for on-site triggering and avoid permanent storage of personal location data.</p>
+        </article>
+        <article class="card">
+          <h3>Responsible GenAI</h3>
+          <p>AI should support adaptive storytelling, but responses need content boundaries, review, and clear connection to verified site knowledge.</p>
+        </article>
+        <article class="card">
+          <h3>Future work</h3>
+          <p>Further work should expand multilingual content, refine outdoor trigger reliability, and evaluate the prototype with a larger and more diverse participant group.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="submission">
+      <div class="section-heading">
+        <div class="section-number">11</div>
+        <div class="section-title">
+          <div class="section-kicker">Submission Readiness</div>
+          <h2>Portfolio requirements are made explicit for marking.</h2>
+          <p>This section maps the coursework checklist to the current submission materials. Items that depend on the final system or video are stated transparently rather than overclaimed.</p>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Coursework requirement</th>
+            <th>Current evidence in this portfolio</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Coursework requirement">Hosted process portfolio</td>
+            <td data-label="Current evidence">Root <code>index.html</code> prepared for GitHub Pages, with links to detailed Markdown process documents.</td>
+            <td data-label="Status">Ready for GitHub Pages</td>
+          </tr>
+          <tr>
+            <td data-label="Coursework requirement">User research, personas, journey, and requirements</td>
+            <td data-label="Current evidence">Research insights, field research photos, Liam and Emma personas, journey map, pain points, and requirement-to-feature mapping.</td>
+            <td data-label="Status">Included</td>
+          </tr>
+          <tr>
+            <td data-label="Coursework requirement">Ideation and alternatives</td>
+            <td data-label="Current evidence">Crazy Eights board, Concept A/B/C comparison, and rationale for selecting the dual-mode AR/AI fragment-collection concept.</td>
+            <td data-label="Status">Included</td>
+          </tr>
+          <tr>
+            <td data-label="Coursework requirement">Prototype evidence</td>
+            <td data-label="Current evidence">Figma prototype link and mobile walkthrough screens showing onboarding, map, AR prompt, AI dialogue, fragment unlock, and leaderboard concept.</td>
+            <td data-label="Status">Included as prototype evidence</td>
+          </tr>
+          <tr>
+            <td data-label="Coursework requirement">System implementation evidence</td>
+            <td data-label="Current evidence">Four-layer architecture diagram, technical plan, and hosted live system URL: <a href="https://cpt208-src.vercel.app" target="_blank" rel="noreferrer">https://cpt208-src.vercel.app</a>.</td>
+            <td data-label="Status">Included</td>
+          </tr>
+          <tr>
+            <td data-label="Coursework requirement">Evaluation and iteration</td>
+            <td data-label="Current evidence">Usability testing with 3 users, feedback themes, and before/after iteration comparison.</td>
+            <td data-label="Status">Included</td>
+          </tr>
+          <tr>
+            <td data-label="Coursework requirement">Video demo</td>
+            <td data-label="Current evidence">No MP4 is embedded in the portfolio yet.</td>
+            <td data-label="Status">Add final 2-minute MP4 link before submission</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="references">
+      <div class="section-heading">
+        <div class="section-number">12</div>
+        <div class="section-title">
+          <div class="section-kicker">References & AI Disclosure</div>
+          <h2>Sources and assisted-production tools are documented.</h2>
+          <p>The project uses AI assistance for portfolio production and coding support, while the research findings, design rationale, and human-centric justification remain based on the group’s own project materials.</p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Academic and product references</h3>
+          <ul>
+            <li>Maubisson, L., Riviere, A., & Coutelle, P. (2022). Research on cultural heritage experiences enhanced with augmented reality.</li>
+            <li>Bekele, M. K., Pierdicca, R., Frontoni, E., Malinverni, E. S., & Gain, J. (2018). A survey of augmented, virtual, and mixed reality for cultural heritage. <em>Journal on Computing and Cultural Heritage</em>, 11(2). DOI: 10.1145/3145534.</li>
+            <li>Tang, L., et al. (2026). Conversational AI-enhanced exploration system for digitised collections.</li>
+            <li>Borges, F., Almeida, M. P., & Silva, C. M. (2023). Systematic review of gamification for cultural heritage.</li>
+            <li>Garro, V., & Sundstedt, V. (2022). Augmented reality and 3D printing for archaeological heritage.</li>
+            <li>Benchmarked products: Google Arts & Culture, Wintor AR Tours, Dunhuang Mogao Grottoes Digital Guide, and Pokemon GO heritage events.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>AI and coding assistance disclosure</h3>
+          <ul>
+            <li>OpenAI Codex, accessed on 2026-05-09, available at <a href="https://openai.com/codex" target="_blank" rel="noreferrer">https://openai.com/codex</a>. Used for coding assistance, portfolio text refinement, responsive layout debugging, and generation of supporting infographic-style assets.</li>
+            <li>The AI-generated or AI-assisted production work was reviewed against the group’s existing README, process documents, field research photos, Figma link, and coursework requirements.</li>
+            <li>Primary user research claims, participant numbers, evaluation evidence, and design decisions were not invented during portfolio production.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="quote-band" style="margin-top: 24px;">
+        <h3>Technical reflection</h3>
+        <p>AI assistance was used to scaffold and refine the static portfolio website. Verification focused on checking that image paths resolved, responsive CSS avoided horizontal overflow, project claims remained aligned with the provided documentation, and the page did not overstate implementation maturity.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Maple Echoes</strong><br>
+        CPT208 Human-Centric Computing process portfolio for Suzhou Maple Bridge.
+      </div>
+      <div>
+        <a href="docs/research.md">Research</a> &middot;
+        <a href="docs/user-needs.md">User Needs</a> &middot;
+        <a href="docs/ideation.md">Ideation</a> &middot;
+        <a href="docs/implementation.md">Implementation</a> &middot;
+        <a href="docs/evaluation.md">Evaluation</a> &middot;
+        <a href="https://cpt208-src.vercel.app" target="_blank" rel="noreferrer">Live System</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const links = Array.from(document.querySelectorAll(".nav-links a"));
+    const sections = links
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        links.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
+      });
+    }, { rootMargin: "-35% 0px -55% 0px", threshold: 0.01 });
+
+    sections.forEach((section) => observer.observe(section));
+  </script>
+</body>
+</html>

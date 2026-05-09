@@ -17,12 +17,13 @@ This project aims to reimagine Maple Bridge as a **playful and immersive journey
 ## 1.2 Literature & Competitor Analysis
 
 ### Key Insights from Academic Research
-We reviewed four studies on digital heritage and AR tourism to inform our design:
+We reviewed five studies on digital heritage and AR tourism to inform our design:
 
 1.  **Maubisson et al. (2022)** highlighted the potential of AR to enhance cultural heritage experiences by adding interactive and immersive layers, which inspired our AR overlay and location-based triggers.
-2.  **Tang et al. (2026)** discussed how conversational AI can help users query and explore large-scale digitized heritage collections, informing our AI dialogue system design.
-3.  **Borges et al. (2023)** provided a systematic review of gamification in cultural heritage, showing that collection-based motivation significantly improves user engagement and long-term retention.
-4.  **Garro & Sundstedt (2022)** presented frameworks for location-based storytelling in outdoor heritage sites, which we adapted to the unique environment of Maple Bridge.
+2.  **Bekele et al. (2018)** surveyed augmented, virtual, and mixed reality for cultural heritage, helping us frame AR as an interaction layer that needs appropriate interface design rather than only visual effects.
+3.  **Tang et al. (2026)** discussed how conversational AI can help users query and explore large-scale digitized heritage collections, informing our AI dialogue system design.
+4.  **Borges et al. (2023)** provided a systematic review of gamification in cultural heritage, showing that collection-based motivation can support engagement and retention.
+5.  **Garro & Sundstedt (2022)** presented frameworks for location-based storytelling in outdoor heritage sites, which we adapted to the unique environment of Maple Bridge.
 
 - **Common Strengths Across Research**:
   - Proven effectiveness of AR in increasing visitor engagement and cultural learning.
@@ -73,6 +74,13 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 - **Behaviour**: Aesthetic-focused, detail-oriented, prefers visual and interactive experiences, and enjoys sharing refined travel content online.
 
 ![Persona: Emma](../assets/images/personas/emma.png)
+
+---
+
+### Primary and Secondary User Groups
+Based on the poster participant distribution and the topic stakeholders, **international tourists** are treated as the primary user group for the initial persona scenarios. Liam and Emma represent two international visitor needs: time-efficient cultural understanding and photography-focused exploration.
+
+Domestic tourists and local residents/students are treated as secondary stakeholders. Their needs are reflected in the **Deep Explore** mode, which provides more layered cultural explanation and supports users who want to go beyond basic landmark information.
 
 ---
 
@@ -128,6 +136,7 @@ Our project addresses these gaps by combining **AR interactions, AI dialogue, ph
 
 ## References
 1. Maubisson, L., Rivière, A., & Coutelle, P. (2022). An Analytical and Comparative Approach to Cultural Heritage Experiences Enhanced with Augmented Reality. *Tourism Management Research*.
-2. Tang, L., et al. (2026). Conversational AI-Enhanced Exploration System to Query Large-Scale Digitised Collections of Natural History Museums. arXiv preprint.
-3. Borges, F., Almeida, M. P., & Silva, C. M. (2023). A Systematic Literature Review of Gamification for Cultural Heritage. *MDPI*.
-4. Garro, V., & Sundstedt, V. (2022). Augmented Reality and 3D Printing for Archaeological Heritage: Evaluation of Visitor Experience. In *Extended Reality*. Springer.
+2. Bekele, M. K., Pierdicca, R., Frontoni, E., Malinverni, E. S., & Gain, J. (2018). A Survey of Augmented, Virtual, and Mixed Reality for Cultural Heritage. *Journal on Computing and Cultural Heritage*, 11(2). https://doi.org/10.1145/3145534
+3. Tang, L., et al. (2026). Conversational AI-Enhanced Exploration System to Query Large-Scale Digitised Collections of Natural History Museums. arXiv preprint.
+4. Borges, F., Almeida, M. P., & Silva, C. M. (2023). A Systematic Literature Review of Gamification for Cultural Heritage. *MDPI*.
+5. Garro, V., & Sundstedt, V. (2022). Augmented Reality and 3D Printing for Archaeological Heritage: Evaluation of Visitor Experience. In *Extended Reality*. Springer.
