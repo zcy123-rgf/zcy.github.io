@@ -43,21 +43,23 @@ Based on participant preference testing (as shown in our poster’s bar chart), 
 ---
 
 ## 3.3 Low-Fidelity Prototype & Iteration
-We created a clickable low-fidelity prototype in Figma to test the core user flow, interaction logic, and screen transitions. The prototype follows the full journey from onboarding to completion:
+We created a clickable low-fidelity prototype in Figma to test the core user flow, interaction logic, and screen transitions. The updated prototype follows the full journey from home entry to ranking:
 
-1.  **Home Screen**: Two mode options (Quick Explore / Deep Explore)
-2.  **Interactive Map**: Location-based story points with guidance
-3.  **Story Point Trigger**: AR/AI prompt when the user arrives
-4.  **Interaction Tasks**: AR overlays, AI dialogue, and photo check-ins
-5.  **Fragment Unlock & Collection**: Visual rewards and progress tracking
-6.  **Leaderboard & Sharing**: View progress and share achievements
+1.  **Home Entry**: Route promise, time estimate, progress state, and start exploration action
+2.  **Map Preview**: Four story points and the next destination along the Maple Bridge route
+3.  **Guided Route**: Walking distance, estimated time, and start-story prompt
+4.  **AR Scan**: Zhang Ji AR interaction, voice AI panel, and check-in camera action
+5.  **AI Guide**: Conversational explanation for the canal, bridge, and poem
+6.  **Moments**: Community photo moments and share action
+7.  **Echoes Summary**: Captured moment, fragment unlock, and progress feedback
+8.  **Ranking**: Community challenge board for optional comparison and continued exploration
 
 Through iterative testing of the prototype, we refined key flows:
 - Added clearer onboarding guidance to reduce confusion at the start
 - Improved the AR/AI trigger feedback to make interactions more responsive
 - Simplified the fragment unlock animation for better user feedback
 
-- Figma Prototype Link: [Click here to open the prototype](https://www.figma.com/link-to-your-prototype)
+- Figma Prototype Link: [Click here to open the prototype](https://www.figma.com/make/c0dRs2buy6AqLNbdvQpPdl/Cultural-Heritage-Experience-Wireframe?p=f&t=2d0sT2ezjjVFXTE7-0)
 
 ---
 

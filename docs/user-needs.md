@@ -3,23 +3,29 @@
 ---
 
 ## 2.1 User Journey Map
-The full user journey for a tourist using **Maple Echoes** is designed to transform passive sightseeing into an active, playful experience. It responds directly to the pain points shown in the poster and in the pain points map: confusing navigation, static text, low interactivity, lack of progress feedback, and one-size-fits-all content. The updated journey follows the poster sequence: onboarding, mode selection, map navigation, story point, AR interaction, AI dialogue, fragment unlock, leaderboard, and moment sharing.
+The full user journey for a tourist using **Maple Echoes** is designed to transform passive sightseeing into an active, playful experience. It responds directly to the pain points shown in the poster and in the pain points map: confusing navigation, static text, low interactivity, lack of progress feedback, and one-size-fits-all content.
 
-1.  **Onboarding & Mode Selection**
-    User opens the app and chooses between Quick Explore (tourist) or Deep Explore (student) mode.
-2.  **Map Navigation**
-    Interactive map guides the user to the first story point at Maple Bridge.
-3.  **Location Trigger & AR/AI Engagement**
-    Upon arrival, the system triggers AR overlays and a short AI-generated story.
-4.  **Interactive Task & Fragment Unlock**
-    User completes a photo check-in or AR task to unlock a cultural fragment.
-5.  **Progression & Social Sharing**
-    User collects fragments, views their progress, and can compare scores on the leaderboard.
-6.  **Journey Completion**
-    After visiting all points, the user receives a summary of their exploration and shareable achievements.
+The updated journey map follows Liam, a primary international tourist persona, and includes the key components expected in a user journey map: journey stages, user actions, thoughts, emotions, pain points, and design responses. The stages follow the updated prototype sequence: home entry, map preview, guided route, AR scan, AI guide, moments, echoes summary, and ranking.
+
+1.  **Home Entry**
+    User opens the app, reviews the route promise, sees progress state, and starts exploration.
+2.  **Map Preview**
+    The map introduces four story points and highlights the next destination.
+3.  **Guided Route**
+    Route guidance gives distance, walking time, and a clear start-story prompt.
+4.  **AR Scan**
+    The system introduces Zhang Ji through AR and supports voice AI and photo check-in.
+5.  **AI Guide**
+    User asks contextual questions about the canal, Maple Bridge, and the poem.
+6.  **Moments**
+    User browses or shares community photo moments connected to the site.
+7.  **Echoes Summary**
+    User receives a captured moment, unlocked fragment, and visible progress feedback.
+8.  **Ranking**
+    User can compare check-in achievements through the community challenge board.
 
 ![User Journey Map](../assets/images/journey/user-journey.png)
-*Pain-point-informed user journey flow of Maple Echoes, highlighting key interactions and touchpoints*
+*User journey map of Maple Echoes, showing stages, actions, thoughts, emotions, pain points, and design responses*
 
 ---
 

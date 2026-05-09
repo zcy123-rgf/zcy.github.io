@@ -410,16 +410,178 @@
 
     .persona img {
       width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
+      aspect-ratio: 1.14 / 1;
+      object-fit: contain;
       border-radius: 0;
       border: 0;
-      border-bottom: 1px solid var(--line);
-      background: var(--paper-2);
+      background: #f7efe1;
     }
 
-    .persona > div {
+    .persona-board {
+      background: var(--paper);
+      border-top-color: var(--gold);
+      padding: 10px;
+    }
+
+    .persona-board img {
+      border-radius: 6px;
+      box-shadow: 0 10px 24px rgba(74, 45, 31, .10);
+      filter: sepia(.12) saturate(.88) hue-rotate(-8deg) brightness(1.02);
+    }
+
+    .persona-showcase .persona > div,
+    .persona-showcase > .card:not(.persona) {
+      display: none;
+    }
+
+    .persona-board figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 12px 4px 2px;
+      color: var(--brown);
+      font-weight: 800;
+    }
+
+    .persona-board figcaption span {
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .journey-intro {
+      display: grid;
+      grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 24px;
+    }
+
+    .journey-focus {
+      background: var(--brown);
+      color: #fffaf1;
+      border-radius: var(--radius);
       padding: 24px;
+      border-top: 5px solid var(--gold);
+      box-shadow: var(--shadow);
+    }
+
+    .journey-focus h3 {
+      color: #fffaf1;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .journey-focus p {
+      color: rgba(255, 250, 241, .84);
+      margin: 0;
+    }
+
+    .journey-components {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .component-chip {
+      min-height: 96px;
+      padding: 13px 12px;
+      background: linear-gradient(180deg, #fffdf8, #fff3df);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .component-chip strong {
+      display: block;
+      color: var(--brown);
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    .journey-map {
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-top: 24px;
+    }
+
+    .journey-board {
+      min-width: 1320px;
+      display: grid;
+      grid-template-columns: 136px repeat(8, minmax(138px, 1fr));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 12px 30px rgba(74, 45, 31, .08);
+    }
+
+    .journey-cell {
+      min-height: 108px;
+      padding: 17px 16px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255, 250, 241, .74);
+    }
+
+    .journey-cell:nth-child(9n) {
+      border-right: 0;
+    }
+
+    .journey-cell.stage {
+      min-height: 128px;
+      background: linear-gradient(180deg, #fffaf1, #f4e6d1);
+    }
+
+    .journey-cell.row-label {
+      background: var(--brown);
+      color: #fffaf1;
+      font-weight: 850;
+      letter-spacing: .02em;
+      display: flex;
+      align-items: center;
+      min-height: 96px;
+    }
+
+    .journey-cell.stage strong {
+      display: block;
+      color: var(--brown);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      line-height: 1.08;
+      margin-top: 6px;
+    }
+
+    .journey-cell.stage span {
+      color: var(--maple);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .journey-cell.emotion {
+      background: #fbf4e5;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .journey-cell.pain {
+      color: var(--red-brown);
+      background: #fff8ef;
+    }
+
+    .journey-image {
+      margin-top: 28px;
+      padding: 10px;
+    }
+
+    .journey-image img {
+      max-height: none;
+      object-fit: contain;
     }
 
     .journey {
@@ -494,7 +656,7 @@
 
     .phone-row {
       display: grid;
-      grid-template-columns: repeat(9, minmax(190px, 1fr));
+      grid-template-columns: repeat(8, minmax(190px, 1fr));
       gap: 18px;
       overflow-x: auto;
       padding: 26px 18px 24px;
@@ -671,12 +833,14 @@
     @media (max-width: 940px) {
       .hero-inner,
       .split,
+      .journey-intro,
       .quote-band {
         grid-template-columns: 1fr;
       }
 
       .grid.three,
       .grid.four,
+      .journey-components,
       .concepts {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -721,6 +885,7 @@
       .grid.three,
       .grid.four,
       .concepts,
+      .journey-components,
       .feature-list,
       .persona {
         grid-template-columns: 1fr;
@@ -744,7 +909,7 @@
       }
 
       .phone-row {
-        grid-template-columns: repeat(9, 210px);
+        grid-template-columns: repeat(8, 210px);
         margin-inline: -18px;
         border-left: 0;
         border-right: 0;
@@ -961,21 +1126,21 @@
         <div class="section-title">
           <div class="section-kicker">Personas & Scenarios</div>
           <h2>Personas clarified depth, language, and media needs.</h2>
-          <p>The poster identifies international tourists as the largest participant group, with domestic tourists and local residents as secondary stakeholders. The portfolio therefore separates primary visitor personas from secondary learner/resident needs.</p>
+          <p>Detailed profile information is kept inside the persona boards, so the page focuses on the two primary visitor types used in the journey design.</p>
         </div>
       </div>
 
-      <div class="grid three">
-        <article class="card persona">
-          <img src="assets/images/personas/liam-portrait.png" alt="Close-up portrait representing Liam">
+      <div class="grid two persona-showcase">
+        <article class="card persona persona-board">
+          <img src="assets/images/personas/liam.png" alt="Persona board for Liam, an international backpacker using Maple Echoes">
           <div>
             <span class="tag">Primary user · Quick Explore</span>
             <h3>Liam, 24, UK</h3>
             <p>A solo backpacker with limited Mandarin. He needs a time-efficient route, English explanation, and enough context to understand why Maple Bridge is culturally significant.</p>
           </div>
         </article>
-        <article class="card persona">
-          <img src="assets/images/personas/emma-portrait.png" alt="Close-up portrait representing Emma">
+        <article class="card persona persona-board">
+          <img src="assets/images/personas/emma.png" alt="Persona board for Emma, a photography-focused visitor using Maple Echoes">
           <div>
             <span class="tag">Primary visitor subtype</span>
             <h3>Emma, 27, Canada</h3>
@@ -999,23 +1164,92 @@
         <div class="section-number">05</div>
         <div class="section-title">
           <div class="section-kicker">Journey & Requirements</div>
-          <h2>The journey links pain points to interaction feedback.</h2>
-          <p>The user journey was structured from the pain points shown in the poster and process materials: unclear navigation, static text, low interaction, limited feedback, and uniform content depth.</p>
+          <h2>The journey map connects stages, actions, emotions, and pain points.</h2>
+          <p>The map follows Liam, a primary international tourist persona, across the Maple Echoes journey. It links each stage to user actions, thoughts, emotions, pain points, and the feature response.</p>
         </div>
       </div>
 
-      <div class="journey" aria-label="User journey steps">
-        <div class="journey-step"><strong>1. Onboarding</strong>Select Quick Explore or Deep Explore according to available time and learning depth.</div>
-        <div class="journey-step"><strong>2. Map Navigation</strong>Use the map to locate nearby Maple Bridge story points.</div>
-        <div class="journey-step"><strong>3. Location Trigger</strong>Arrive at a point and receive a contextual AR or AI prompt.</div>
-        <div class="journey-step"><strong>4. Interaction Task</strong>Complete a photo check-in, AR task, or dialogue interaction.</div>
-        <div class="journey-step"><strong>5. Fragment Unlock</strong>Receive a cultural fragment and see updated progress.</div>
-        <div class="journey-step"><strong>6. Completion</strong>Review the route outcome and optional sharing content.</div>
+      <div class="journey-intro">
+        <article class="journey-focus">
+          <h3>Map focus</h3>
+          <p>The redesigned journey follows a first-time international visitor from opening Maple Echoes to sharing a completed cultural route. Each stage connects what the user does, what they need, where friction appears, and how the prototype responds.</p>
+        </article>
+        <div class="journey-components" aria-label="Journey map components">
+          <div class="component-chip"><strong>Persona</strong>Liam and Emma represent quick cultural understanding and photo-led exploration.</div>
+          <div class="component-chip"><strong>Stages</strong>The sequence follows the actual prototype flow from mode choice to sharing.</div>
+          <div class="component-chip"><strong>Actions</strong>Each step describes the visible behaviour the interface must support.</div>
+          <div class="component-chip"><strong>Emotion</strong>The emotional arc moves from uncertainty to reward and reflection.</div>
+          <div class="component-chip"><strong>Pain Points</strong>Problems are translated into concrete product opportunities.</div>
+        </div>
       </div>
 
-      <figure class="image-frame" style="margin-top: 24px;">
+      <div class="journey-map" aria-label="Redesigned user journey map">
+        <div class="journey-board">
+          <div class="journey-cell row-label">Stage</div>
+          <div class="journey-cell stage"><span>01</span><strong>Onboarding</strong></div>
+          <div class="journey-cell stage"><span>02</span><strong>Mode Selection</strong></div>
+          <div class="journey-cell stage"><span>03</span><strong>Map Navigation</strong></div>
+          <div class="journey-cell stage"><span>04</span><strong>Story Point</strong></div>
+          <div class="journey-cell stage"><span>05</span><strong>AR / AI Task</strong></div>
+          <div class="journey-cell stage"><span>06</span><strong>Fragment Unlock</strong></div>
+          <div class="journey-cell stage"><span>07</span><strong>Leaderboard</strong></div>
+          <div class="journey-cell stage"><span>08</span><strong>Moment Share</strong></div>
+
+          <div class="journey-cell row-label">User actions</div>
+          <div class="journey-cell">Creates an account or signs in to save route progress.</div>
+          <div class="journey-cell">Chooses Quick Explore or Deep Explore based on time and interest.</div>
+          <div class="journey-cell">Follows the route to the next cultural node around Maple Bridge.</div>
+          <div class="journey-cell">Arrives at a marked site and opens the story prompt.</div>
+          <div class="journey-cell">Scans the scene, asks a question, or completes a photo task.</div>
+          <div class="journey-cell">Receives a cultural fragment and sees progress update immediately.</div>
+          <div class="journey-cell">Checks collected progress and optional community ranking.</div>
+          <div class="journey-cell">Reviews and shares captured Maple Bridge moments.</div>
+
+          <div class="journey-cell row-label">Thoughts</div>
+          <div class="journey-cell">Will my visit be saved?</div>
+          <div class="journey-cell">How long will this take?</div>
+          <div class="journey-cell">Where should I go next?</div>
+          <div class="journey-cell">Why is this place important?</div>
+          <div class="journey-cell">Can I understand the poem in English?</div>
+          <div class="journey-cell">I can see what I achieved.</div>
+          <div class="journey-cell">How do I compare with others?</div>
+          <div class="journey-cell">This is something I can remember and share.</div>
+
+          <div class="journey-cell row-label">Emotion</div>
+          <div class="journey-cell emotion">Uncertain</div>
+          <div class="journey-cell emotion">Curious</div>
+          <div class="journey-cell emotion">Reassured</div>
+          <div class="journey-cell emotion">Interested</div>
+          <div class="journey-cell emotion">Engaged</div>
+          <div class="journey-cell emotion">Rewarded</div>
+          <div class="journey-cell emotion">Motivated</div>
+          <div class="journey-cell emotion">Reflective</div>
+
+          <div class="journey-cell row-label">Pain points</div>
+          <div class="journey-cell pain">No progress identity.</div>
+          <div class="journey-cell pain">One-size-fits-all route depth.</div>
+          <div class="journey-cell pain">Unclear navigation and missed landmarks.</div>
+          <div class="journey-cell pain">Hard to connect place with cultural meaning.</div>
+          <div class="journey-cell pain">Static text and language barriers.</div>
+          <div class="journey-cell pain">No immediate feedback after interaction.</div>
+          <div class="journey-cell pain">Low continuity after a single visit.</div>
+          <div class="journey-cell pain">Few memorable or shareable outcomes.</div>
+
+          <div class="journey-cell row-label">Design response</div>
+          <div class="journey-cell">Account access and saved collection state.</div>
+          <div class="journey-cell">Quick / Deep Explore mode split.</div>
+          <div class="journey-cell">Guided route and location-based story points.</div>
+          <div class="journey-cell">Short contextual prompts at each cultural node.</div>
+          <div class="journey-cell">AR overlay plus AI-supported explanation.</div>
+          <div class="journey-cell">Fragment reward and visible progress feedback.</div>
+          <div class="journey-cell">Leaderboard as optional motivation.</div>
+          <div class="journey-cell">Moment gallery and shareable visit record.</div>
+        </div>
+      </div>
+
+      <figure class="image-frame journey-image">
         <img src="assets/images/journey/user-journey.png" alt="User journey map of Maple Echoes">
-        <figcaption>Pain-point-informed journey map showing how onboarding, navigation, AR/AI prompts, tasks, and progress feedback respond to the problems identified in research.</figcaption>
+        <figcaption>Exported journey-map asset retained as supporting visual evidence.</figcaption>
       </figure>
 
       <table style="margin-top: 28px;">
@@ -1091,55 +1325,50 @@
         <div class="section-title">
           <div class="section-kicker">Prototype Walkthrough</div>
           <h2>The prototype demonstrates the poster journey flow.</h2>
-          <p>The walkthrough follows the poster sequence from account onboarding and mode selection to map navigation, story point arrival, AR/AI interaction, fragment unlock, leaderboard, and moment sharing.</p>
+      <p>The walkthrough follows the updated prototype sequence from the home entry and map preview to guided route, AR/AI interaction, community moments, fragment summary, and leaderboard.</p>
         </div>
       </div>
 
-      <div class="phone-row" aria-label="Prototype screen walkthrough">
+      <div class="phone-row prototype-row" aria-label="Prototype screen walkthrough">
         <article class="prototype-card">
-          <img src="assets/images/prototype/onboarding.png" alt="Onboarding account access screen">
-          <strong>01 Onboarding</strong>
-          <span>Account access keeps fragments and ranking identity.</span>
+          <img src="assets/images/prototype/app-home.png" alt="Maple Bridge home screen with account, progress, and start exploration button">
+          <strong>01 Home Entry</strong>
+          <span>Users see the route promise, time estimate, progress state, and start the exploration.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/mode-selection.png" alt="Mode selection home screen">
-          <strong>02 Mode Selection</strong>
-          <span>Users begin the Maple Bridge journey and choose the route depth.</span>
+          <img src="assets/images/prototype/app-story.png" alt="Map preview screen showing story points along the route">
+          <strong>02 Map Preview</strong>
+          <span>The route shows four story points and the next destination before walking begins.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/map-navigation.png" alt="Guided map navigation screen">
-          <strong>03 Map Navigation</strong>
-          <span>Route guidance leads visitors to the next story point.</span>
+          <img src="assets/images/prototype/app-map.png" alt="Guided route screen to the Grand Canal Turning Point">
+          <strong>03 Guided Route</strong>
+          <span>Navigation gives distance, walking time, and a clear prompt to start the story.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/story-point.png" alt="Story point screen">
-          <strong>04 Story Point</strong>
-          <span>The site prompt introduces the Grand Canal turning point.</span>
+          <img src="assets/images/prototype/app-ar.jpg" alt="AR scan screen with Zhang Ji interaction and voice AI panel">
+          <strong>04 AR Scan</strong>
+          <span>AR introduces Zhang Ji, voice AI, and a camera action for the check-in task.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/ar-interaction.png" alt="AR interaction screen">
-          <strong>05 AR Interaction</strong>
-          <span>AR introduces Zhang Ji and supports a photo task.</span>
+          <img src="assets/images/prototype/app-ai-dialogue.png" alt="AI heritage guide dialogue screen for Maple Bridge questions">
+          <strong>05 AI Guide</strong>
+          <span>Visitors can ask quick questions about the canal, the bridge, and the poem.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/ai-dialogue.png" alt="AI dialogue screen">
-          <strong>06 AI Dialogue</strong>
-          <span>Visitors ask about the bridge, canal, and poem.</span>
+          <img src="assets/images/prototype/app-photo-task.png" alt="Maple Bridge moments screen with shared visitor photos and share button">
+          <strong>06 Moments</strong>
+          <span>Community photos turn the visit into a shareable, social memory layer.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/fragment-unlock.png" alt="Fragment unlock screen">
-          <strong>07 Fragment Unlock</strong>
-          <span>Check-in feedback turns the visit into a collected memory.</span>
+          <img src="assets/images/prototype/app-fragment.jpg" alt="Fragment summary screen showing captured moment and puzzle fragment unlock">
+          <strong>07 Echoes Summary</strong>
+          <span>The completed check-in unlocks a fragment and reinforces progress feedback.</span>
         </article>
         <article class="prototype-card">
-          <img src="assets/images/prototype/leaderboard.png" alt="Leaderboard screen">
-          <strong>08 Leaderboard</strong>
-          <span>Community ranking supports optional continued exploration.</span>
-        </article>
-        <article class="prototype-card">
-          <img src="assets/images/prototype/moment-share.png" alt="Moment sharing screen">
-          <strong>09 Moment Share</strong>
-          <span>Visitors browse and share Maple Bridge moments.</span>
+          <img src="assets/images/prototype/app-leaderboard.jpg" alt="Community ranking screen for Maple Bridge check-in creators">
+          <strong>08 Ranking</strong>
+          <span>The final challenge board supports optional comparison and continued exploration.</span>
         </article>
       </div>
 
@@ -1185,7 +1414,7 @@
         <div class="section-title">
           <div class="section-kicker">Evaluation & Iteration</div>
           <h2>Evaluation connected user feedback to iteration priorities.</h2>
-          <p>The alpha usability test involved 3 users: an international tourist, a domestic visitor, and a local student. They completed the prototype flow from mode selection to map navigation, AR interaction, AI conversation, and fragment collection.</p>
+          <p>The alpha usability test involved 3 users: an international tourist, a domestic visitor, and a local student. They completed the prototype flow from home entry and map preview to guided route, AR interaction, AI guide, moments, fragment summary, and ranking.</p>
         </div>
       </div>
 
@@ -1280,7 +1509,7 @@
           </tr>
           <tr>
             <td data-label="Coursework requirement">Prototype evidence</td>
-            <td data-label="Current evidence">Figma prototype link and mobile walkthrough screens showing onboarding, map, AR prompt, AI dialogue, fragment unlock, and leaderboard concept.</td>
+            <td data-label="Current evidence">Figma prototype link and mobile walkthrough screens showing home entry, map preview, guided route, AR scan, AI guide, moments, fragment summary, and ranking.</td>
             <td data-label="Status">Included as prototype evidence</td>
           </tr>
           <tr>
