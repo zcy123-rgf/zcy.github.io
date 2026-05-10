@@ -685,6 +685,66 @@
       box-shadow: 0 10px 28px rgba(190, 82, 43, .10);
     }
 
+    .selection-rationale {
+      margin-top: 18px;
+      padding: 22px 24px;
+      background: rgba(255, 253, 248, .96);
+      border: 1px solid rgba(190, 82, 43, .34);
+      border-left: 6px solid var(--maple);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 26px rgba(74, 45, 31, .07);
+    }
+
+    .selection-rationale h3,
+    .reference-block h3 {
+      margin-bottom: 8px;
+    }
+
+    .selection-rationale p {
+      max-width: 980px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    .references-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .reference-block {
+      grid-column: 1 / -1;
+    }
+
+    .reference-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .reference-list {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .reference-list li {
+      margin: 0 0 10px;
+      line-height: 1.55;
+    }
+
+    .reference-list.compact li {
+      margin-bottom: 7px;
+    }
+
+    .reference-link {
+      color: var(--red-brown);
+      font-weight: 750;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
     .phone-row {
       display: grid;
       grid-template-columns: repeat(8, minmax(190px, 1fr));
@@ -939,6 +999,7 @@
       .grid.four,
       .journey-components,
       .concepts,
+      .reference-grid,
       .metric-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -983,6 +1044,7 @@
       .grid.three,
       .grid.four,
       .concepts,
+      .reference-grid,
       .metric-grid,
       .iteration-evidence,
       .journey-components,
@@ -1409,7 +1471,7 @@
       <div class="section-heading">
         <div class="section-number">06</div>
         <div class="section-title">
-          <div class="section-kicker">Ideation & Alternatives</div>
+          <div class="section-kicker">Ideation &amp; Alternatives</div>
           <h2>Ideation compared levels of interaction and feasibility.</h2>
           <p>Crazy Eights was used to explore possible combinations of map navigation, AR prompts, AI dialogue, photo tasks, and collection mechanics before the team compared three concept directions.</p>
         </div>
@@ -1433,10 +1495,15 @@
         </article>
         <article class="card concept-card selected">
           <span class="tag">Selected Concept C</span>
-          <h3>Playful AR, AI & Fragments</h3>
+          <h3>Playful AR, AI &amp; Fragments</h3>
           <p>The selected direction combines location-based story points, AR prompts, AI-supported explanation, photo check-ins, fragments, and community ranking.</p>
         </article>
       </div>
+
+      <article class="selection-rationale">
+        <h3>Why Concept C was selected</h3>
+        <p>Concept C was selected because it provided the strongest overall response to the identified user needs. In comparison with the more static and less participatory alternatives, it offered a better balance of immersion, interaction, cultural interpretation, and progression-based motivation.</p>
+      </article>
     </section>
 
     <section id="prototype">
@@ -1691,23 +1758,74 @@
       <div class="section-heading">
         <div class="section-number">12</div>
         <div class="section-title">
-          <div class="section-kicker">References & AI Disclosure</div>
+          <div class="section-kicker">References &amp; AI Disclosure</div>
           <h2>Sources and assisted-production tools are documented.</h2>
           <p>The project uses AI assistance for portfolio production and coding support, while the research findings, design rationale, and human-centric justification remain based on the group’s own project materials.</p>
         </div>
       </div>
 
       <div class="grid two">
-        <article class="card">
+        <article class="card reference-block">
           <h3>Academic and product references</h3>
-          <ul>
-            <li>Maubisson, L., Riviere, A., & Coutelle, P. (2022). Research on cultural heritage experiences enhanced with augmented reality.</li>
-            <li>Bekele, M. K., Pierdicca, R., Frontoni, E., Malinverni, E. S., & Gain, J. (2018). A survey of augmented, virtual, and mixed reality for cultural heritage. <em>Journal on Computing and Cultural Heritage</em>, 11(2). DOI: 10.1145/3145534.</li>
-            <li>Tang, L., et al. (2026). Conversational AI-enhanced exploration system for digitised collections.</li>
-            <li>Borges, F., Almeida, M. P., & Silva, C. M. (2023). Systematic review of gamification for cultural heritage.</li>
-            <li>Garro, V., & Sundstedt, V. (2022). Augmented reality and 3D printing for archaeological heritage.</li>
-            <li>Benchmarked products: Google Arts & Culture, Wintor AR Tours, Dunhuang Mogao Grottoes Digital Guide, and Pokemon GO heritage events.</li>
-          </ul>
+          <div class="references-stack">
+            <div>
+              <span class="tag">Academic references</span>
+              <ol class="reference-list">
+                <li>Bekele, M. K., Pierdicca, R., Frontoni, E., Malinverni, E. S., &amp; Gain, J. (2018). A Survey of Augmented, Virtual, and Mixed Reality for Cultural Heritage. <em>ACM Journal on Computing and Cultural Heritage</em>, 11(2). DOI: 10.1145/3145534.</li>
+                <li>Garro, V., &amp; Sundstedt, V. (2022). Augmented Reality and 3D Printing for Archaeological Heritage: Evaluation of Visitor Experience. In <em>Extended Reality</em>. DOI: 10.1007/978-3-031-15553-6_25.</li>
+                <li>Wang, Y., Johnston, A., Sadokierski, Z., Stephens, R., &amp; Ahyong, S. T. (2026). Conversational AI-Enhanced Exploration System to Query Large-Scale Digitised Collections of Natural History Museums. arXiv: 2603.10285.</li>
+                <li>Marques, C. G., Pedro, J. P., &amp; Ara&uacute;jo, I. (2023). A Systematic Literature Review of Gamification in/for Cultural Heritage: Leveling up, Going Beyond. <em>Heritage</em>, 6(8), 5935-5951. DOI: 10.3390/heritage6080312.</li>
+              </ol>
+            </div>
+
+            <div>
+              <span class="tag">Benchmarked product references</span>
+              <ol class="reference-list compact">
+                <li>Google Arts &amp; Culture, official platform: <a class="reference-link" href="https://artsandculture.google.com/" target="_blank" rel="noreferrer">artsandculture.google.com</a>.</li>
+                <li>Wintor AR Tours, official platform: <a class="reference-link" href="https://www.wintor.com/" target="_blank" rel="noreferrer">wintor.com</a>.</li>
+                <li>Mogao Grottoes Digital Exhibition Center, stable visitor information page: <a class="reference-link" href="https://www.asiatours.com/experiences/mogao-grottoes-digital-exhibition-center.html" target="_blank" rel="noreferrer">asiatours.com</a>.</li>
+                <li>Pok&eacute;mon GO, official site: <a class="reference-link" href="https://pokemongo.com/" target="_blank" rel="noreferrer">pokemongo.com</a>.</li>
+              </ol>
+            </div>
+
+            <div class="reference-grid">
+              <div>
+                <span class="tag">What the papers did well</span>
+                <ol class="reference-list compact">
+                  <li>Showed how AR and XR can link digital interpretation to physical heritage settings.</li>
+                  <li>Highlighted the value of conversational and inquiry-based access to cultural content.</li>
+                  <li>Demonstrated that gamification can support engagement and motivation.</li>
+                </ol>
+              </div>
+              <div>
+                <span class="tag">What the papers missed</span>
+                <ol class="reference-list compact">
+                  <li>Most focused on one main feature rather than a complete on-site journey.</li>
+                  <li>Few combined navigation, AR storytelling, AI dialogue, and rewards in one system.</li>
+                  <li>Limited attention was given to continuous multi-point outdoor use.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="reference-grid">
+              <div>
+                <span class="tag">What the products did well</span>
+                <ol class="reference-list compact">
+                  <li>Supported place-linked exploration and digital storytelling.</li>
+                  <li>Used AR, multimedia, or overlays to increase engagement.</li>
+                  <li>Encouraged participation through tasks, routes, or collection mechanics.</li>
+                </ol>
+              </div>
+              <div>
+                <span class="tag">What the products missed</span>
+                <ol class="reference-list compact">
+                  <li>Core functions were often separated rather than integrated into one journey.</li>
+                  <li>They offered limited support for flexible cultural inquiry or AI-style dialogue.</li>
+                  <li>Some prioritised attraction or task completion over deeper interpretation.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
         </article>
         <article class="card">
           <h3>AI and coding assistance disclosure</h3>
