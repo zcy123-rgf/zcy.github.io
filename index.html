@@ -567,6 +567,39 @@
       font-weight: 800;
     }
 
+    .journey-cell.emotion-curve-panel {
+      grid-column: span 8;
+      min-height: 220px;
+      padding: 0;
+      background: linear-gradient(180deg, #fffdf8 0%, #fff4e2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .emotion-curve-svg {
+      display: block;
+      width: 100%;
+      min-width: 1060px;
+      height: 220px;
+    }
+
+    .emotion-curve-label {
+      font-size: 13px;
+      font-weight: 850;
+      fill: var(--muted);
+    }
+
+    .emotion-curve-stage {
+      font-size: 11px;
+      fill: var(--muted);
+    }
+
+    .emotion-curve-note {
+      font-size: 11px;
+      font-weight: 800;
+      fill: var(--red-brown);
+    }
+
     .journey-cell.pain {
       color: var(--red-brown);
       background: #fff8ef;
@@ -1236,7 +1269,7 @@
           <div class="component-chip"><strong>Persona</strong>Liam and Emma represent cultural understanding and photo-led exploration.</div>
           <div class="component-chip"><strong>Stages</strong>The sequence follows the actual prototype flow from home entry to ranking.</div>
           <div class="component-chip"><strong>Actions</strong>Each step describes the visible behaviour the interface must support.</div>
-          <div class="component-chip"><strong>Emotion</strong>The emotional arc moves from uncertainty to reward and reflection.</div>
+          <div class="component-chip"><strong>Emotion</strong>A plotted curve shows where confidence rises, where friction appears, and where reward is delivered.</div>
           <div class="component-chip"><strong>Pain Points</strong>Problems are translated into concrete product opportunities.</div>
         </div>
       </div>
@@ -1282,6 +1315,40 @@
           <div class="journey-cell emotion">Rewarded</div>
           <div class="journey-cell emotion">Motivated</div>
           <div class="journey-cell emotion">Reflective</div>
+
+          <div class="journey-cell row-label">Emotional curve</div>
+          <div class="journey-cell emotion-curve-panel">
+            <svg class="emotion-curve-svg" viewBox="0 0 1120 220" role="img" aria-label="Emotional curve across the Maple Echoes user journey">
+              <defs>
+                <linearGradient id="emotionFill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#c65a22" stop-opacity=".28"/>
+                  <stop offset="72%" stop-color="#d49a2a" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#fffaf1" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <line x1="72" y1="46" x2="1084" y2="46" stroke="#ead9be" stroke-width="2" stroke-dasharray="6 8"/>
+              <line x1="72" y1="112" x2="1084" y2="112" stroke="#d8c3a7" stroke-width="2"/>
+              <line x1="72" y1="178" x2="1084" y2="178" stroke="#ead9be" stroke-width="2" stroke-dasharray="6 8"/>
+              <text class="emotion-curve-label" x="18" y="50">Delight</text>
+              <text class="emotion-curve-label" x="18" y="116">Neutral</text>
+              <text class="emotion-curve-label" x="18" y="182">Friction</text>
+              <path d="M90 126 C142 118, 176 96, 216 90 S312 108, 356 104 S462 82, 504 70 S602 50, 650 58 S748 100, 792 96 S904 52, 952 50 S1032 72, 1060 78 L1060 190 L90 190 Z" fill="url(#emotionFill)"/>
+              <path d="M90 126 C142 118, 176 96, 216 90 S312 108, 356 104 S462 82, 504 70 S602 50, 650 58 S748 100, 792 96 S904 52, 952 50 S1032 72, 1060 78" fill="none" stroke="#c65a22" stroke-width="5" stroke-linecap="round"/>
+              <g fill="#fffaf1" stroke="#c65a22" stroke-width="4">
+                <circle cx="90" cy="126" r="9"/><circle cx="216" cy="90" r="9"/><circle cx="356" cy="104" r="9"/><circle cx="504" cy="70" r="9"/>
+                <circle cx="650" cy="58" r="9"/><circle cx="792" cy="96" r="9"/><circle cx="952" cy="50" r="9"/><circle cx="1060" cy="78" r="9"/>
+              </g>
+              <text class="emotion-curve-stage" x="66" y="208">Home</text>
+              <text class="emotion-curve-stage" x="188" y="208">Map</text>
+              <text class="emotion-curve-stage" x="322" y="208">Route</text>
+              <text class="emotion-curve-stage" x="468" y="208">AR</text>
+              <text class="emotion-curve-stage" x="622" y="208">AI</text>
+              <text class="emotion-curve-stage" x="750" y="208">Moments</text>
+              <text class="emotion-curve-stage" x="908" y="208">Fragment</text>
+              <text class="emotion-curve-stage" x="1026" y="208">Ranking</text>
+              <text class="emotion-curve-note" x="704" y="128">minor social-friction risk</text>
+            </svg>
+          </div>
 
           <div class="journey-cell row-label">Pain points</div>
           <div class="journey-cell pain">No clear starting point.</div>
@@ -1349,8 +1416,8 @@
       </div>
 
       <figure class="image-frame">
-        <img src="assets/images/ideation/crazy-eights.png" alt="Crazy Eights ideation sketch board with eight concept cards">
-        <figcaption>Hand-drawn sketch board redrawn from the prototype screen flow, showing eight core moments in the Maple Echoes experience.</figcaption>
+        <img src="assets/images/ideation/crazy-eights.png" alt="Crazy Eights sketch board with eight portrait phone wireframe sketches">
+        <figcaption>Hand-drawn sketch board redrawn from the prototype screen flow. Each sketch keeps the same portrait phone proportion as the original screen captures.</figcaption>
       </figure>
 
       <div class="concepts" style="margin-top: 24px;">

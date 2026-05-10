@@ -12,7 +12,7 @@ To quickly explore design directions for Maple Echoes, we used the Crazy Eights 
 These quick iterations helped us identify the most engaging combinations of AR, AI, and gamification for one continuous guided visit.
 
 ![Crazy Eights Sketches](../assets/images/ideation/crazy-eights.png)
-*Hand-drawn sketch board redrawn from the prototype screen flow*
+*Hand-drawn sketch board redrawn from the prototype screen flow, using the same portrait phone proportion as the screen captures*
 
 ---
 
