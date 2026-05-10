@@ -4,7 +4,7 @@
 
 **GitHub Pages URL:** https://zcy123-rgf.github.io/zcy.github.io/
 **Live System URL:** https://cpt208-src.vercel.app
-**Source Repository:** https://github.com/zcy123-rgf/zcy.github.io
+**Source Repository:** https://github.com/zcy123-rgf/CPT208_A2-3_Echoes-of-Maplebridge
 **Figma Prototype:** https://www.figma.com/make/c0dRs2buy6AqLNbdvQpPdl/Cultural-Heritage-Experience-Wireframe?p=f&t=2d0sT2ezjjVFXTE7-0
 
 **Project Theme:** A2 Suzhou Grand Canal – Maple Bridge  
